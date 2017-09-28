@@ -1,2 +1,106 @@
-Hello World :)
-romuloMendes
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>change demo</title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<style>
+
+body {
+    font: normal normal normal 10px/1.5 Arial, Helvetica, sans-serif;
+}
+.ui-dialog-osx {
+    -moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    border-width: 0 8px 8px 8px;
+}
+#msg {
+    margin-top:100px;
+    text-align:center;
+    font-size:2em;
+    color:red;
+}
+
+</style>
+    </head>
+    <body>
+<!--
+        * Se a cheched for true
+            E ouver as classe to_continue
+        *Onclick botão 1
+            Tem inputs alternativas sem valor se sim
+            Voce tem certeza que deseja salvar ?
+        *sim(btn_X)
+            Submeter informações normal mente
+        * nao(btn_z)
+            Verificar informaçoes que estão com a class  to_continue vazias para continuar
+
+-->
+        <h1>Formulario</h1>
+        nome<br><input class="to_continue" type="text" name="nome" value="ppp"> <br>
+        telefone<br><input class="to_continue" type="text" name="telefone"> <br>
+        cpf<br><input class="to_continue" type="text" name="cpf"> <br>
+        telefone<br><input class="to_continue" type="text" name="telefone"> <br>
+
+        <input type="checkbox" name="vehicle" value="Bike" class="check_dynamic">  O aluno e proprio responsavel finaceiro ?<br>
+        <button id="id_1">Salvar</button>
+        <button id="id_2">Não</button>
+
+<div id="msg">Dialog closed</div>
+        <script>
+            $('#id_1').click(function() {
+                $(".check_dynamic").change(function() {
+                    // pega o status true ou false da  'checked'
+                    var $status = $(this).prop("checked");
+                    if($status == true) {
+                        // pega os elementos com  a class .to_continue com valor vazio
+                        $('.to_continue').each(function() {
+                            if($(this).val() == '') {
+                                // aqui alerta as inputs vazias obrigatorias
+                                // alert($(this).attr('name') + " = " + $(this).val());
+                                console.log($(this).attr('name') + " = " + $(this).val());
+                            }
+                        });
+                        console.log('true');
+                    }
+                    else {
+                        console.log('false');
+                    }
+                }).change();
+            });
+
+$('#msg').hide();
+
+
+// USANDO FUNCTION
+
+$( "#id_1" ).click(function() {
+    doFunctionForYes();
+    $('#msg').text('YES');
+});
+
+$( "#id_2" ).click(function() {
+    doFunctionForNo();
+    $('#msg').text('NO');
+});
+
+
+
+
+
+function doFunctionForYes() {
+    alert("Yes");
+    $('#msg').show();
+}
+
+function doFunctionForNo() {
+    alert("No");
+    $('#msg').show();
+}
+
+
+        </script>
+    </body>
+</html>
