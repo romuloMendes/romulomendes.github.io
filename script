@@ -1,3 +1,28 @@
+/*
+CREATE TABLE pessoas (
+    id serial primary key,
+    nome varchar(255)
+);
+
+CREATE TABLE enderecos (
+    id serial primary key,
+    nome varchar(255)
+);
+---
+
+ALTER TABLE pessoas ADD sexo smallint;
+
+SELECT * FROM pessoas;
+
+ALTER TABLE pessoas DROP COLUMN sexo;
+ALTER TABLE pessoas ADD sexo CHAR(1);
+
+INSERT INTO pessoas (nome,sexo) VALUES ('ENRIQUE DIAS', 'M');
+
+
+*/
+
+
 CREATE TABLE public.aula_pessoas (
     nome character varying(255),
     sexo character varying(1)
