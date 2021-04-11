@@ -1,106 +1,1759 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR" prefix="og: http://ogp.me/ns#">
     <head>
-        <meta charset="utf-8">
-        <title>change demo</title>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<style>
-
-body {
-    font: normal normal normal 10px/1.5 Arial, Helvetica, sans-serif;
-}
-.ui-dialog-osx {
-    -moz-border-radius: 0 0 8px 8px;
-    -webkit-border-radius: 0 0 8px 8px;
-    border-radius: 0 0 8px 8px;
-    border-width: 0 8px 8px 8px;
-}
-#msg {
-    margin-top:100px;
-    text-align:center;
-    font-size:2em;
-    color:red;
-}
-
-</style>
-    </head>
-    <body>
-<!--
-        * Se a cheched for true
-            E ouver as classe to_continue
-        *Onclick botão 1
-            Tem inputs alternativas sem valor se sim
-            Voce tem certeza que deseja salvar ?
-        *sim(btn_X)
-            Submeter informações normal mente
-        * nao(btn_z)
-            Verificar informaçoes que estão com a class  to_continue vazias para continuar
-
--->
-        <h1>Formulario</h1>
-        nome<br><input class="to_continue" type="text" name="nome" value="ppp"> <br>
-        telefone<br><input class="to_continue" type="text" name="telefone"> <br>
-        cpf<br><input class="to_continue" type="text" name="cpf"> <br>
-        telefone<br><input class="to_continue" type="text" name="telefone"> <br>
-
-        <input type="checkbox" name="vehicle" value="Bike" class="check_dynamic">  O aluno e proprio responsavel finaceiro ?<br>
-        <button id="id_1">Salvar</button>
-        <button id="id_2">Não</button>
-
-<div id="msg">Dialog closed</div>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?key=G-QXTK4RQJ1Y"></script>
         <script>
-            $('#id_1').click(function() {
-                $(".check_dynamic").change(function() {
-                    // pega o status true ou false da  'checked'
-                    var $status = $(this).prop("checked");
-                    if($status == true) {
-                        // pega os elementos com  a class .to_continue com valor vazio
-                        $('.to_continue').each(function() {
-                            if($(this).val() == '') {
-                                // aqui alerta as inputs vazias obrigatorias
-                                // alert($(this).attr('name') + " = " + $(this).val());
-                                console.log($(this).attr('name') + " = " + $(this).val());
-                            }
-                        });
-                        console.log('true');
-                    }
-                    else {
-                        console.log('false');
-                    }
-                }).change();
-            });
-
-$('#msg').hide();
-
-
-// USANDO FUNCTION
-
-$( "#id_1" ).click(function() {
-    doFunctionForYes();
-    $('#msg').text('YES');
-});
-
-$( "#id_2" ).click(function() {
-    doFunctionForNo();
-    $('#msg').text('NO');
-});
-
-
-
-
-
-function doFunctionForYes() {
-    alert("Yes");
-    $('#msg').show();
-}
-
-function doFunctionForNo() {
-    alert("No");
-    $('#msg').show();
-}
-
-
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-QXTK4RQJ1Y');
         </script>
+        <title>Unidades Mapa Educação - Encontre uma unidade mapa perto de você</title>
+        <!-- This site is optimized with the Yoast SEO plugin v8.0 - https://yoast.com/wordpress/plugins/seo/ -->
+        <meta name="description" content="Encontre uma unidade mapa perto de você"/>
+        <meta name="robots" content="noindex,follow"/>
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Unidades Mapa Educação - Encontre uma unidade mapa perto de você" />
+        <meta property="og:description" content="Encontre uma unidade mapa perto de você" />
+        <meta property="og:url" content="https://mapaeducacao.com/" />
+        <meta property="og:site_name" content="Unidades Mapa Educação" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="Encontre uma unidade mapa perto de você" />
+        <meta name="twitter:title" content="Unidades Mapa Educação - Encontre uma unidade mapa perto de você" />
+        <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/mapaeducacao.com\/","name":"Unidades Mapa Educa\u00e7\u00e3o","potentialAction":{"@type":"SearchAction","target":"https:\/\/mapaeducacao.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+        <!-- / Yoast SEO plugin. -->
+        <link rel='dns-prefetch' href='//maps.google.com' />
+        <link rel='dns-prefetch' href='//ajax.googleapis.com' />
+        <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+        <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+        <link rel='dns-prefetch' href='//s.w.org' />
+        <script type="text/javascript">
+            window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mapaeducacao.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.8"}};
+            !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+        </script>
+        <style type="text/css">
+            img.wp-smiley,
+            img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+            }
+        </style>
+        <link rel='stylesheet' id='wp-block-library-css'  href='https://mapaeducacao.com/wp-includes/css/dist/block-library/style.min.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='contact-form-7-css'  href='https://mapaeducacao.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+        <link rel='stylesheet' id='jquery-ui-css'  href='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/css/jquery-ui-1.10.3.custom.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='jquery-ui-spinner-css'  href='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/css/jquery-ui-spinner.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='form_maker_calendar-jos-css'  href='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/css/calendar-jos.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='form_maker_frontend-css'  href='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/css/form_maker_frontend.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='cookie-notice-front-css'  href='https://mapaeducacao.com/wp-content/plugins/cookie-notice/css/front.min.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='wpsm_ac-font-awesome-front-css'  href='https://mapaeducacao.com/wp-content/plugins/responsive-accordion-and-collapse/css/font-awesome/css/font-awesome.min.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='wpsm_ac_bootstrap-front-css'  href='https://mapaeducacao.com/wp-content/plugins/responsive-accordion-and-collapse/css/bootstrap-front.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='bodhi-svgs-attachment-css'  href='https://mapaeducacao.com/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='dlm-frontend-css'  href='https://mapaeducacao.com/wp-content/plugins/download-monitor/assets/css/frontend.css?ver=5.1.8' type='text/css' media='all' />
+        <link rel='stylesheet' id='style-css'  href='https://mapaeducacao.com/wp-content/themes/mapa-educacao/style.css?ver=1' type='text/css' media='all' />
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+        <script type='text/javascript' src='https://maps.google.com/maps/api/js?v=3.exp&#038;key&#038;ver=5.1.8'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/js/if_gmap_front_end.js?ver=5.1.8'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/js/jelly.min.js?ver=5.1.8'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/js/file-upload.js?ver=5.1.8'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/js/calendar/calendar.js?ver=5.1.8'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/js/calendar/calendar_function.js?ver=5.1.8'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var fm_objectL10n = {"plugin_url":"https:\/\/mapaeducacao.com\/wp-content\/plugins\/contact-form-maker"};
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/contact-form-maker/js/main_div_front_end.js?ver=cfm-1.8.35'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var cnArgs = {"ajaxUrl":"https:\/\/mapaeducacao.com\/wp-admin\/admin-ajax.php","nonce":"13b204bc99","hideEffect":"fade","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"0","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1","coronabarActive":"0"};
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/cookie-notice/js/front.min.js?ver=1.3.2'></script>
+        <link rel='https://api.w.org/' href='https://mapaeducacao.com/wp-json/' />
+    </head>
+    <body class="home blog cookies-set cookies-accepted">
+        <header>
+            <nav class="main-nav navbar navbar-expand-lg" role="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="https://mapaeducacao.com/">
+                        <h1>Mapa Educação</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Navegação"></button>
+                    <div id="main-nav" class="collapse navbar-collapse justify-content-end">
+                        <ul id="menu-navegacao-principal" class="navbar-nav">
+                            <li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445 nav-item"><a href="https://mapaeducacao.com/nossa-historia/" class="nav-link">Nossa história</a></li>
+                            <li id="menu-item-1091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1091 nav-item"><a href="https://mapaeducacao.com/quem-somos/" class="nav-link">Quem somos</a></li>
+                            <li id="menu-item-481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-481 nav-item"><a href="https://benfeitoria.com/mapaeducacao" class="nav-link">Contribua</a></li>
+                            <li id="menu-item-597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-597 nav-item"><a href="https://mapaeducacao.com/contato/" class="nav-link">Contato</a></li>
+                            <li id="menu-item-720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720 nav-item"><a href="https://mapaeducacao.com/faq/" class="nav-link">FAQ</a></li>
+                            <li id="menu-item-800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-800 nav-item"><a href="https://mapaeducacao.com/parte/" class="nav-link">faça parte</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="hero">
+            <article class="container">
+                <div class="row">
+                    <div class="col-lg-11">
+                        <h1>Acreditamos no potencial do jovem para transformar a educação em sua região. <strong></strong></h1>
+                        <h1><strong> Vem fazer parte! </strong></h1>
+                        <a href="#map" class="btn btn-primary">Encontre um líder local<span class="d-none d-md-inline text-truncate"> no seu estado</span></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-8 text-center">
+                        <a href="" class="launch-video" data-toggle="modal" data-target="#video">Assistir ao vídeo</a>
+                    </div>
+                    <article class="col-lg-4">
+                        <h2>Queremos que todos os brasileiros tenham acesso a uma <strong>educação de qualidade</strong></h2>
+                        <p>Somos um movimento de jovens que acredita que uma educação de qualidade para todos é possivel. Políticas públicas efetivas de educação e uma sociedade civil que se engaje cada vez mais nessa discussão são a chave para isso!</p>
+                        <!--<a href="http://mapaeducacao.com/#about" class="btn btn-block btn-ghost btn-lg" target="_blank">Conheça nossos projetos</a>-->
+                        <a href="http://mapaeducacao.com/nossa-historia/" class="btn btn-block btn-primary" target="_blank">Conheça nossos projetos</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="map" id="map">
+            <div class="container">
+                <div class="row justify-content-lg-between justify-content-center">
+                    <div class="d-none d-lg-block col-lg-8">
+                        <div class="map-area-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mapa-svg-estados-svg" viewBox="0 0 802 544" class="a">
+                                <g id="mapa-svg-area">
+                                    <g class="mapa-svg-estados state-go-class" id="goias">
+                                        <path
+                                            d="M461.9 266.5L463.7 268.4 462.7 269.3 462.5 271.1 463.5 272.6 462.4 273.2 461.5 275.9 462 279.8 463.1 281.9 465.3 283.9 464.8 285.8 465.4 287.5 464.2 289.4 463.4 290.2 461.2 289.9 459 287.7 458.2 288.8 458.5 291.3 456.2 291 454.9 291.4 454.4 295.6 455.1 297.5 455.4 300.6 450.5 302.5 449.9 301.9 450.4 297.5 449.2 296.5 441 296.3 440 300.2 441 302.5 450.5 302.5 450.2 304.7 448.8 307.6 450.9 309.5 452.1 312.7 450.1 315.1 448 318.3 450.6 319.4 450.9 320.7 449.9 322.8 450.7 325.2 447.7 326.9 446.7 328.2 444.1 329.6 440.2 328.5 434.2 328.5 432.7 328.2 430.8 329.1 428.3 331.6 426.9 330.1 423.7 331.6 421.6 331.4 418 332.6 416 335.2 415.8 337 414.5 337.1 412.4 339.2 411.1 341.2 409.5 339.1 407.6 338.8 406.3 337.7 403.8 337.3 399.4 335.2 398.1 334.1 396.3 333.7 394.8 332.5 390.7 332.2 391.6 329.6 388.6 327.8 388.7 324.7 386.6 319.9 387.1 316.4 388.8 313.7 389.7 311.2 391.3 310.4 393.1 308.1 392.9 305.3 394.4 303.6 396.4 302.5 397.8 300.8 401.1 299.9 403.1 296.2 403.7 293.3 405.2 291.6 407.3 290.4 408.9 290.7 409.6 289.7 411.1 285.4 410.8 284.2 411.6 281.1 412.3 281 412.3 276.6 415.3 271.5 415.4 269 416.3 267.1 416.7 265.4 418.5 263.1 419.3 265 418.5 266.4 418.9 268 424.9 270.7 427.7 271.5 430.7 265.8 431.6 265.2 434.1 267.4 434.7 269.8 435.9 270.8 441.1 270.7 446.7 272.6 445.9 270.7 449 271.5 452.7 269.8 456.1 269.4 457.5 267.9Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 412.5104 312.2663)" class="abreviation-state">GO</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-sp-class" id="sao-paulo">
+                                        <path
+                                            d="M477 374.9L479 377.2 483.4 377.2 484.2 378.3 482.1 380.2 479.6 380.4 477.4 381.7 476.6 384.5 478.1 386 475.7 386.2 474.3 387.7 470.6 389.7 469.5 391.6 465.9 390.7 461.5 393.2 458.1 394.6 454 397.1 453.7 398.4 449 401.6 446.9 402.5 444.2 404.8 443.5 407.8 442.1 409 440.5 405.6 438.5 404.9 436.3 401.6 429 401.5 429.8 397.7 428.7 395.3 425.8 392.2 426.3 390.2 425.2 387.8 425.7 386.5 424.4 383.1 422.9 382.6 421.2 380.9 418.4 381.3 417.3 380.9 413.1 381.3 412 379.8 409.5 379.2 407 377.8 405.3 378.2 401.3 377.3 399.8 376.4 394.4 377.4 389.8 376.8 387.4 378.4 389.6 375.6 391 375.1 396 371.4 396.8 369.4 399.6 366.4 398.9 365.1 401.5 362.7 401.3 360.7 404 357.3 404.1 355.2 407.2 351.4 409.3 350.7 410.8 348.4 412.1 347.2 414.5 346.3 416.6 344.7 417.8 345.8 422.7 346.4 426.4 346.4 429 347.5 429.1 349.1 430.7 350.6 433.9 349.1 436.9 348.6 444.2 348.4 444.7 347 446.9 347.7 449 347.7 451.2 349.6 450.6 352.1 452.1 353.3 452.5 354.8 451.3 357.5 453.8 362.7 455.7 362.8 459 364 459.2 364.7 457.2 368.1 457.8 370.1 456.9 373.8 457.5 375.1 460.1 376.4 460.8 380.4 463.1 380.6 465.9 380.2 467.4 379.4 467.5 377.8 470.2 377.2 471 377.8 474.7 375.6Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 429.8438 374.2663)" class="abreviation-state">SP</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-pe-class" id="pernambuco">
+                                        <path
+                                            d="M583.7 209.2L584.7 210 583.7 212 584.6 213.1 583.2 218 581 224.1 577.5 223.2 574.9 224.1 574 223.6 571.7 223.8 568.2 227.2 565.5 228.2 562.4 227.9 561.7 228.8 559.2 227.6 556.9 225.4 555.1 224.4 552.3 224.9 547.8 228.6 547 226.3 544.9 224.4 541.1 222.5 537.3 221.5 535.3 219.9 532.3 221.2 532.2 222.6 530 223.2 530.1 224.6 527.6 226.1 526 226.1 525.4 228.8 522.2 230.3 521.3 227.4 519.6 226.4 519.4 223.5 516.4 221.8 514.2 221.9 519 218.9 522.6 215.4 523.1 212.5 521.8 211.5 522.2 210.2 521.5 207.9 523.1 207.5 528.2 207.7 530.5 207.1 532.6 207.3 536 209.3 537 210.7 540 212.5 541 211 542.9 210 544.9 211.6 546.6 210.9 547.7 212.5 548.7 211.7 551.1 211.3 553.5 209.2 555.2 208.5 556.4 207 558.3 206.3 560.4 207.5 561 208.8 558.9 209.6 559.3 211.5 558.1 213.3 559.6 213.9 559.7 215.9 561.8 217.2 563.4 216.5 565.1 215 565.7 213.3 567.3 212.2 572.4 212.2 573 211.6 576.6 210.4 577.2 208.2 579.5 207.5 581.9 207.7Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 545.8438 221.5996)" class="abreviation-state">PE</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-ac-class" id="acre">
+                                        <path
+                                            d="M240.7 234.1L242.6 235 236.9 239.4 235.4 239.4 232.6 241.4 231.2 243.6 229.7 243.1 227.1 243.5 225.4 246.1 223.5 247.3 220 248.4 219.5 246.7 213.2 246.1 209.7 246.4 207.2 245.9 203 247.6 201 246.1 199.8 246.9 199.8 234.3 200.3 229.8 197.3 232.2 195.8 233.9 193.8 235.2 191.7 236 183.1 236 183.5 234.7 181 230.4 176.5 229.5 172.1 229.5 174.9 225.9 174.7 224.8 172.6 221.9 170.7 220.6 170.5 219.2 168.8 218.2 167.3 214.3 166.1 213.7 166.8 211.8 164.1 209.6 163.9 207.3 166.8 206.6 165.8 204.6 178.1 209.7 202.7 215.9 208.8 219.1Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 205.8438 237.5996)" class="abreviation-state">AC</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-am-class" id="amazonas">
+                                        <path
+                                            d="M326.2 125.5L326.3 131.4 327.6 132.5 327.5 134.8 329 136.2 330.7 137 331.1 138.8 334.7 141.9 337.4 143.4 339.2 145 345.4 147.5 346.4 148.8 348.9 149.8 349 151.3 350.2 151.8 351.5 151.2 352.7 152.3 352.9 153.6 348.9 162.2 332.4 197.8 330.5 200.7 331.5 203 333.5 205 334.1 206.9 333.2 208 333 210.3 331.5 212.2 332.2 215.4 330.5 221.6 329.7 222.2 296.8 222.5 295.5 221.6 293.7 223.6 291.1 222.4 290.8 220.7 289.4 220.4 288.5 218.2 286.8 218.1 284.8 214.8 282.9 214.2 276.1 214.2 275.5 215.9 273.9 217.2 272 217.7 272 219.9 271.2 221.4 269.6 221.7 269.8 224.3 267 224.3 265.1 225.2 262.7 224.9 261.6 225.6 261.2 227.7 259.9 229.5 258.8 229.5 258.1 227.8 255.2 229.9 253.4 230 252.3 231.2 250.2 229.4 245.4 229.4 245.4 230.6 244.2 231.9 241.7 233.1 240.7 234.1 208.8 219.1 202.7 215.9 178.1 209.7 165.8 204.6 166.2 202.3 167.1 201.2 170.7 198.7 171.9 198.6 173 197.2 171.9 193.3 173 191.2 174.4 189.3 174.7 186.7 175.6 184.5 175.3 183.2 178.1 182.4 184.4 177.5 186.3 176.4 190.5 175.7 192.1 175.8 195.1 174.9 196.3 175.1 198.2 172.6 200.3 173 202.1 172.4 204.5 174.6 206.3 174.6 207.2 173.1 210.4 155.8 213.1 140.6 212.6 138.7 210.7 135.8 210.5 133.2 207.2 131.2 205.9 129.7 206.2 121.7 208.3 121.5 212.5 120.1 213.5 121.1 215.4 120.4 215.8 118.6 214.3 116.8 211 116.4 208.3 116.6 208.2 109.6 211.2 108.9 213.7 109.4 226.4 109.4 225.4 108 227 107 228.2 109.2 230.4 108.4 232.5 105.8 235 105.2 237.7 109.6 238.1 111.4 238 115.3 240.2 114.8 245.3 119.4 248.5 120 252.6 117.3 254.8 118.4 254.1 120 255.6 120.5 256.9 118.2 258.4 117.7 258.9 115.8 260.1 115.7 262.1 114.3 263.3 114.5 266.4 111.9 267.9 112.4 270.1 110.5 270.5 107.6 271.1 106.9 273.7 106.6 275.2 105.4 277.4 104.8 277.7 103.9 280 104.5 281.3 106 285 107 284.9 109.5 284.1 110.7 286 112.9 287.8 119.3 286.8 120 287.3 122.1 286.5 125.3 287 126.9 286.3 127.8 287.3 130.2 288.6 131.4 289.3 134.4 287.1 136.2 289.2 138.1 292.3 140.2 293.9 142.6 296.8 143 296.6 141.6 297.3 139 297.5 136.2 298.3 134.8 302.2 133.2 304.1 133.9 306.1 137.1 308.5 136.8 310.7 135.3 309.8 133.5 310.7 130.4 312.7 126.5 313.8 125.5Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 264.8438 177.5996)" class="abreviation-state">AM</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-pa-class" id="para">
+                                        <path
+                                            d="M412.6 134.2L412.4 135.6 409.6 136.8 409.6 135.8 411.2 134.4ZM408.3 133.9L409.1 134.8 407.8 138.8 402.3 143.5 400.5 143.2 401.3 141.3 403 140.1 403.5 137 405 134.8 407.4 133.5ZM420.5 129.4L425.2 130.5 427.7 130.4 428.7 129.6 433 129.7 433.4 130.2 438.4 130.7 439 131.9 438 133.2 437.3 137.3 436.2 139.4 434.4 140.7 433.9 143.4 429.8 145.4 428.2 145.6 426.8 145 425.2 146.8 423.4 147.5 421 146.3 419.8 147 417.1 147.6 415.3 147.2 415.2 146 413.5 144.4 412.8 142.4 413.1 140.7 412.9 137.7 413.1 135 414.5 130.8 417.5 129ZM411.9 131.2L410.4 129.7 411.3 128 413.3 127.4 414.6 129.2ZM427 127.2L428.3 127.6 427.5 129.2 424.5 129.5 425.5 127.3ZM426.6 124.7L424.8 125.8 423.3 127.8 421.4 128.5 420.5 127.6 418.3 127.8 417.5 125.6 420.3 125.5 421.1 124.7 423 124.7 425.3 123.8ZM417.8 122.3L418 124.9 416.4 125 416.8 122.2ZM421.1 121.6L421 122.4 418.5 124.1 418.9 121.6ZM370.2 101.5L370.9 103.6 370.1 105.1 370.7 108.9 374.6 109 376.9 110.2 377.8 111.8 379.8 112.9 382.1 112.6 384.2 115.8 384.8 117.8 388.1 120.6 387.9 123.8 388.8 125.2 390.1 130 391.1 129.9 393.3 132.2 393.2 133.9 394.4 134.9 394.4 137.1 395.6 137.2 396.1 139.4 399.4 140.6 401 140.4 400.9 142.2 399.3 143 397.4 142.4 393.8 144.3 395.4 144.8 397 144.2 398.3 145.5 400.4 145.1 403.5 143 407.7 141.2 410.4 139.1 410.8 137.8 412.6 137.8 411.7 140 412.7 141.2 412.7 143.4 414.1 145.2 415.4 148.3 416.5 148.6 421.2 147.5 424.4 148.5 427.2 146.9 428.2 148.3 427.4 151.4 428.7 151.6 430.9 146.9 432.6 145.1 434.2 145.4 436.1 142.8 437.2 144.9 437.8 141.7 439.3 142.1 440 140 441.5 137.6 441.3 136.3 443.5 135.9 445.9 134.8 448.7 135.8 450.7 134.4 454.9 136.9 459.2 137.3 459.4 138.9 461.2 139 462 140.2 463.5 140.9 462.9 141.2 462 146.4 462 149.1 461.4 150.9 459.6 153.3 459.9 154.9 457.3 157.3 457.3 161.2 455.7 163.6 454.3 164.4 453.4 166.3 453 169.2 450.6 171.8 449.6 173.9 446.7 177.5 445.1 177.3 435.1 185.4 435.2 185.5 437 186.2 438.7 185.9 441.5 188.7 439.8 189.6 440.5 191.3 439.3 192.3 439.9 193.5 438.3 194.3 437.6 196.3 435.8 198.3 435.6 199.7 432.1 200.9 430.1 202.2 430.2 205.8 428.2 208.7 428.2 210.3 430.3 211.8 430.1 214.8 428.9 218.3 428.1 218.9 426 223.2 424.1 224.1 420.9 228.5 420.3 231.1 419 234.2 407.6 233.6 366.8 231.1 352.1 230.1 348 228 345.5 227.3 345.2 225.6 343.1 224.5 340 222.4 339 219 339.4 216.6 337.9 214.7 335.8 209 334.1 206.9 333.5 205 331.5 203 330.5 200.7 332.4 197.8 348.9 162.2 352.9 153.6 352.7 152.3 351.5 151.2 350.2 151.8 349 151.3 348.9 149.8 346.4 148.8 345.4 147.5 339.2 145 337.4 143.4 334.7 141.9 331.1 138.8 330.7 137 329 136.2 327.5 134.8 327.6 132.5 326.3 131.4 326.2 125.5 325.1 113.8 326.4 115.1 328.2 114.1 330 114.3 330 112.4 332.2 110.7 335.3 111.6 336.2 110.3 337.8 109.6 340.2 109.6 342.6 106.8 345.2 106.2 346.2 107.3 348.5 107.8 350.4 107.2 353.5 107.3 356.8 108.2 357.9 107.7 357.9 106 356.4 104 357.1 101 360 102.2 363.5 101.8 364.6 100.9 367.4 100.2 369.1 101.6Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 382.8438 187.5996)" class="abreviation-state">PA</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-ro-class" id="rondonia">
+                                        <path
+                                            d="M296.8 222.5L298.1 224.1 296.8 228.6 298.1 232 297.1 237.3 298.3 240.9 297.7 244.5 298.3 246.8 309.3 246.9 314.2 248.5 315 250.7 312.9 254 313.4 256.7 314.3 256.9 315.3 259.1 316 262.1 313.2 268 312 268.4 310.3 271.8 309.7 273.7 306.3 276.1 304.5 274.9 299.6 274.2 294.6 274.8 291.5 271.7 291.4 270.4 288 270.2 287.7 269.6 284.3 268.9 282 267 281.1 264.9 278.4 265.5 276.6 263.9 274.8 263 272.6 262.9 272 263.7 266.8 262.8 266.1 260.6 263.4 259.4 262.6 258.1 260.7 257.9 259.7 255.1 258.2 254.8 258 252.5 256.6 251.1 256.1 248.5 257.1 246.7 256 244.6 255.6 241 257.3 238.1 256.7 235.5 257.1 234.2 255.6 232.4 254.1 234.1 251.7 233.2 248.7 233.5 244.8 234.7 242.6 235 240.7 234.1 241.7 233.1 244.2 231.9 245.4 230.6 245.4 229.4 250.2 229.4 252.3 231.2 253.4 230 255.2 229.9 258.1 227.8 258.8 229.5 259.9 229.5 261.2 227.7 261.6 225.6 262.7 224.9 265.1 225.2 267 224.3 269.8 224.3 269.6 221.7 271.2 221.4 272 219.9 272 217.7 273.9 217.2 275.5 215.9 276.1 214.2 282.9 214.2 284.8 214.8 286.8 218.1 288.5 218.2 289.4 220.4 290.8 220.7 291.1 222.4 293.7 223.6 295.5 221.6Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 274.5104 251.5996)" class="abreviation-state">RO</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-to-class" id="tocantins">
+                                        <path
+                                            d="M465 239.4L467 239.5 466.5 240.5 463.5 242.2 461.1 244.2 461.9 245.5 460.3 246.7 458.3 250.6 459.9 252.3 462.4 252.7 463.1 254.3 461.7 254.8 463.6 257 460.8 259.2 461 262.4 462.7 263.3 461.9 266.5 457.5 267.9 456.1 269.4 452.7 269.8 449 271.5 445.9 270.7 446.7 272.6 441.1 270.7 435.9 270.8 434.7 269.8 434.1 267.4 431.6 265.2 430.7 265.8 427.7 271.5 424.9 270.7 418.9 268 418.5 266.4 419.3 265 418.5 263.1 416.7 265.4 416.3 267.1 415.1 266.6 414.5 263.8 414.9 262.5 414.3 259.9 414.5 257.5 413.9 254.6 414.5 253.3 413.5 252.4 414.9 247.5 415 243.3 416.9 239.6 417.2 237.6 419 234.2 420.3 231.1 420.9 228.5 424.1 224.1 426 223.2 428.1 218.9 428.9 218.3 430.1 214.8 430.3 211.8 428.2 210.3 428.2 208.7 430.2 205.8 430.1 202.2 432.1 200.9 435.6 199.7 435.8 198.3 437.6 196.3 438.3 194.3 439.9 193.5 439.3 192.3 440.5 191.3 439.8 189.6 441.5 188.7 438.7 185.9 437 186.2 435.2 185.5 437.3 183.9 439.3 183.5 441.3 184.5 443 184.2 448.2 187 448.5 189.7 449.3 191.1 449.1 193.6 449.7 195 448.9 198.3 448.2 203.4 446.9 205 448.2 206.3 448.4 208.1 450.6 210.5 453.5 214.6 455.1 213.7 458.2 213 459.2 213.7 459 218.5 456.7 218.6 455.5 219.2 454.5 222.2 454.7 223.2 452.9 224.9 455.4 226.9 456.4 229.5 458.7 231 457.2 233.1 459.2 234.5 459.4 236 460.7 237.7 463.5 238.2Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 433.8438 244.2663)" class="abreviation-state">TO</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-df-class" id="distrito-federal">
+                                        <path
+                                            d="M450.5 302.5L441 302.5 440 300.2 441 296.3 449.2 296.5 450.4 297.5 449.9 301.9Z" class="b"/>
+                                        <text transform="matrix(1 0 0 1 441.1771 294.9329)" class="abreviation-state">DF</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-ms-class" id="mato-grosso-do-sul">
+                                        <path
+                                            d="M388.7 324.7L388.6 327.8 391.6 329.6 390.7 332.2 394.8 332.5 396.3 333.7 398.1 334.1 399.4 335.2 403.8 337.3 406.3 337.7 407.6 338.8 409.5 339.1 411.1 341.2 410.5 344.5 410.8 348.4 409.3 350.7 407.2 351.4 404.1 355.2 404 357.3 401.3 360.7 401.5 362.7 398.9 365.1 399.6 366.4 396.8 369.4 396 371.4 391 375.1 389.6 375.6 387.4 378.4 384.1 379.9 382.8 380.9 382.4 383.1 381.2 385.7 379.1 386.8 377.8 391.4 377.7 393 375.9 394.2 371.9 391.3 368.6 393.1 365.6 393.8 363.1 392.8 363 390.5 362.1 388.9 362.3 386.3 360.7 379.7 361.1 377.7 359.8 376.5 359.7 375.1 358.2 373.8 354.9 373.5 352.5 371.1 350.8 372.5 347.6 373.6 343.9 372.5 342.2 372.7 337.2 371.9 335.7 370.6 336.7 366.6 336.1 364.6 337 362.8 337.2 359.2 336.5 357.4 337 355.6 335.9 354.7 335.5 352.8 333.9 349.1 337 347 334.2 344.2 338.5 335.2 337.9 334.8 340.4 326.6 338.5 322.8 338.5 321.5 341.3 323.4 345 322.1 346.5 320.6 348.9 316.8 353.5 316.5 356.4 315.4 359.3 317.2 361 317.5 362 318.9 365.9 321 368.9 320.6 371.1 319.1 372.7 319 374.7 320.9 376.9 320.3 380.9 316.2 381.9 316.1 381.2 320.5 380 321 378.7 323.3 381.4 324.6 386 324.5Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 361.8438 352.2663)" class="abreviation-state">MS</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-mg-class" id="minas-gerais">
+                                        <path
+                                            d="M526.6 324.2L524.4 323.4 519.1 324.2 518.8 325.7 516.6 327.8 518.1 329.4 517.8 331.7 519 332.3 517.6 336.2 518.8 337.8 518.6 341.2 516.4 343.7 516.2 345.7 514.9 346.6 514.2 349.4 510.3 349.6 508.8 356.2 506.4 358.8 503.4 366 504.4 366.9 496.3 370.6 493 370.3 491.7 370.9 488.4 370.9 484.9 372.2 483.6 373.1 481.2 373.2 477 374.9 474.7 375.6 471 377.8 470.2 377.2 467.5 377.8 467.4 379.4 465.9 380.2 463.1 380.6 460.8 380.4 460.1 376.4 457.5 375.1 456.9 373.8 457.8 370.1 457.2 368.1 459.2 364.7 459 364 455.7 362.8 453.8 362.7 451.3 357.5 452.5 354.8 452.1 353.3 450.6 352.1 451.2 349.6 449 347.7 446.9 347.7 444.7 347 444.2 348.4 436.9 348.6 433.9 349.1 430.7 350.6 429.1 349.1 429 347.5 426.4 346.4 422.7 346.4 417.8 345.8 416.6 344.7 414.5 346.3 412.1 347.2 410.8 348.4 410.5 344.5 411.1 341.2 412.4 339.2 414.5 337.1 415.8 337 416 335.2 418 332.6 421.6 331.4 423.7 331.6 426.9 330.1 428.3 331.6 430.8 329.1 432.7 328.2 434.2 328.5 440.2 328.5 444.1 329.6 446.7 328.2 447.7 326.9 450.7 325.2 449.9 322.8 450.9 320.7 450.6 319.4 448 318.3 450.1 315.1 452.1 312.7 450.9 309.5 448.8 307.6 450.2 304.7 450.5 302.5 455.4 300.6 455.1 297.5 454.4 295.6 454.9 291.4 456.2 291 458.5 291.3 458.2 288.8 459 287.7 461.2 289.9 463.4 290.2 464.2 289.4 465.2 292.3 467.2 292.5 469.2 290.2 470.4 290.2 472.9 287.9 476.5 286.5 477 285.5 479.9 283.6 482.3 282.6 486 282.9 488.1 283.6 487.2 286 487.4 287.2 491.4 288.6 494.4 286.8 497 287.3 500.6 290.2 506.4 292.9 509.5 292.1 514.3 296.4 514.6 298.9 516.5 299.6 518.3 298.6 521.8 298.9 526.5 300.1 530.4 303.4 529.6 305.4 528.3 306.5 527.4 308.2 526.1 308.4 525.7 311.9 523.8 311.8 522.7 314.7 523.7 319.5 526.9 322.4Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 477.8438 333.5996)" class="abreviation-state">MG</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-mt-class" id="mato-grosso">
+                                        <path
+                                            d="M419 234.2L417.2 237.6 416.9 239.6 415 243.3 414.9 247.5 413.5 252.4 414.5 253.3 413.9 254.6 414.5 257.5 414.3 259.9 414.9 262.5 414.5 263.8 415.1 266.6 416.3 267.1 415.4 269 415.3 271.5 412.3 276.6 412.3 281 411.6 281.1 410.8 284.2 411.1 285.4 409.6 289.7 408.9 290.7 407.3 290.4 405.2 291.6 403.7 293.3 403.1 296.2 401.1 299.9 397.8 300.8 396.4 302.5 394.4 303.6 392.9 305.3 393.1 308.1 391.3 310.4 389.7 311.2 388.8 313.7 387.1 316.4 386.6 319.9 388.7 324.7 386 324.5 381.4 324.6 378.7 323.3 380 321 381.2 320.5 381.9 316.1 380.9 316.2 376.9 320.3 374.7 320.9 372.7 319 371.1 319.1 368.9 320.6 365.9 321 362 318.9 361 317.5 359.3 317.2 356.4 315.4 353.5 316.5 348.9 316.8 346.5 320.6 345 322.1 341.3 323.4 338.5 321.5 337.5 319.1 335.7 319 333.1 317 331.5 316.2 330.5 311.8 330.5 309.3 331.7 307.8 331.9 305.3 329.8 305.7 312.7 305.1 312.1 304.5 311.5 296.5 308.4 292.5 311.1 292 311 286.8 309 281 309.9 279.5 309.1 277.8 306.3 276.1 309.7 273.7 310.3 271.8 312 268.4 313.2 268 316 262.1 315.3 259.1 314.3 256.9 313.4 256.7 312.9 254 315 250.7 314.2 248.5 309.3 246.9 298.3 246.8 297.7 244.5 298.3 240.9 297.1 237.3 298.1 232 296.8 228.6 298.1 224.1 296.8 222.5 329.7 222.2 330.5 221.6 332.2 215.4 331.5 212.2 333 210.3 333.2 208 334.1 206.9 335.8 209 337.9 214.7 339.4 216.6 339 219 340 222.4 343.1 224.5 345.2 225.6 345.5 227.3 348 228 352.1 230.1 366.8 231.1 407.6 233.6Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 350.5104 270.9329)" class="abreviation-state">MT</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-rs-class" id="rio-grande-do-sul">
+                                        <path
+                                            d="M424.6 457.6L421 463.6 418.1 471.7 413.7 479 409.1 484.5 404.7 488.2 401.5 490.2 399.6 492.4 399.1 489.2 400.8 489.4 403.2 488.4 406.3 484.9 408.1 484.3 409.1 482 408.9 480.3 410.8 479 411 477.2 413.3 476.1 414.1 475 415.7 469.3 411.8 469.8 409.3 469 407.6 473.7 406.7 474 406.8 477 406 479.5 404.1 480.1 403.7 481.7 400.8 482.3 400.2 485.7 397.8 487.6 398.1 489.8 397.2 491.7 398.9 492 395.9 497.3 394.9 501.2 393.3 505.1 391.2 507.9 385.2 513.3 383.4 512.1 383.8 505 385.9 503.3 387.9 500.6 386.4 498.7 383.2 496.7 381 491.6 377.6 489.5 376.9 489.9 373.5 486.9 372.2 484.3 369.7 483.9 365 481.3 364 479.2 361.4 476.5 358.5 479.4 356.8 479.2 357.2 476.6 354.7 473.2 352.9 471.9 350 468.7 348.1 467.2 345.5 467.3 344 469.5 340.8 469.4 340 468.5 342.8 465.8 343 464.1 345.1 463.1 349.7 457.7 350.8 455.2 352.6 454.3 353.9 451.1 355.1 450.5 358.1 447 359.6 444.5 361.3 442.8 363.1 442.4 365.7 439.7 367.5 439.4 368.7 438.2 369.6 435.9 371 436 375.4 434.5 376.5 432.5 380.2 431.3 384.9 430.8 387.5 431.4 389 430.8 392.1 432.3 394.2 432.1 398.1 432.5 401 434.9 404.3 435.3 405.9 436.2 408.3 438.6 409.9 439.2 412 441.7 414.8 446 415.7 446.5 422.1 447.1 424.6 447.9 422.3 450.2 422.1 453 420.6 456.6 422.9 456.3Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 379.1771 458.933)" class="abreviation-state">RS</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-pr-class" id="parana">
+                                        <path
+                                            d="M442.1 409L439.3 409.2 437.3 411.5 438.3 412.8 436.7 417.1 430.9 417.2 426 420 422.1 417.5 414.5 418.1 412.5 420.4 409.9 420.1 407.6 422.4 408.2 424.6 406.5 425.4 405.3 424.5 399.8 424.2 398.1 422.8 395 422.4 391.2 421.3 388 421.7 385.4 420.2 383.9 420.8 382.1 420.4 380.3 416.7 379.5 412.8 376.2 411.7 373.6 413 372.2 411.9 372 410.5 373.9 406.9 373.5 406 375.1 401 375.7 397.5 374.9 395.3 375.9 394.2 377.7 393 377.8 391.4 379.1 386.8 381.2 385.7 382.4 383.1 382.8 380.9 384.1 379.9 387.4 378.4 389.8 376.8 394.4 377.4 399.8 376.4 401.3 377.3 405.3 378.2 407 377.8 409.5 379.2 412 379.8 413.1 381.3 417.3 380.9 418.4 381.3 421.2 380.9 422.9 382.6 424.4 383.1 425.7 386.5 425.2 387.8 426.3 390.2 425.8 392.2 428.7 395.3 429.8 397.7 429 401.5 436.3 401.6 438.5 404.9 440.5 405.6Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 395.1771 402.2663)" class="abreviation-state">PR</text>
+                                    </g>
+                                    <g  class="mapa-svg-estados state-sc-class" id="santa-catarina">
+                                        <path
+                                            d="M437.1 439.2L437.6 435.8 438.6 436.3ZM436.7 417.1L436.7 419.2 435 421.1 436.5 422.5 435.7 426.1 436.2 427.5 436.3 432.2 436.9 433.2 436 435.1 436.8 439.4 435.5 445.6 432.9 449.3 428.5 452.7 424.6 457.6 422.9 456.3 420.6 456.6 422.1 453 422.3 450.2 424.6 447.9 422.1 447.1 415.7 446.5 414.8 446 412 441.7 409.9 439.2 408.3 438.6 405.9 436.2 404.3 435.3 401 434.9 398.1 432.5 394.2 432.1 392.1 432.3 389 430.8 387.5 431.4 384.9 430.8 380.2 431.3 381.6 428.1 381 426 382.1 420.4 383.9 420.8 385.4 420.2 388 421.7 391.2 421.3 395 422.4 398.1 422.8 399.8 424.2 405.3 424.5 406.5 425.4 408.2 424.6 407.6 422.4 409.9 420.1 412.5 420.4 414.5 418.1 422.1 417.5 426 420 430.9 417.2Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 415.1771 435.5996)" class="abreviation-state">SC</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-al-class" id="alagoas">
+                                        <path
+                                            d="M581 224.1L579.3 227.1 577.4 229 575.1 232.3 573.4 233 573.1 234.3 571.4 236.6 568.7 239.1 567.5 241.3 566.9 240.4 563 238.2 561.7 236 558.7 234.7 557.9 233.7 555.5 233.1 550.4 230.7 548.3 229.6 547.8 228.6 552.3 224.9 555.1 224.4 556.9 225.4 559.2 227.6 561.7 228.8 562.4 227.9 565.5 228.2 568.2 227.2 571.7 223.8 574 223.6 574.9 224.1 577.5 223.2Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 565.8438 233.5996)" class="abreviation-state">AL</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-ba-class" id="bahia">
+                                        <path
+                                            d="M547.8 228.6L548.3 229.6 550.4 230.7 550.1 232.9 550.7 234.5 552.8 237.1 552.2 240.5 552.3 243.3 550.7 244.1 548.2 243.8 547.7 245.4 550.6 249.6 550.3 250.8 554 252.9 555.9 252.5 556.7 252.3 554.1 258.3 549.8 264.8 546.5 268.4 544.9 265.7 542.6 264.6 542.3 268.3 538.9 273.6 540 276.2 539.4 279.3 540.5 279.9 539.7 282.2 538.9 287.3 539.4 288.9 539.6 293.5 540.5 298.9 541.1 300.3 539.1 306.9 537.4 315.1 537.3 317.6 538 321.3 536.7 323 534.3 324.6 532.4 328.2 526.6 324.2 526.9 322.4 523.7 319.5 522.7 314.7 523.8 311.8 525.7 311.9 526.1 308.4 527.4 308.2 528.3 306.5 529.6 305.4 530.4 303.4 526.5 300.1 521.8 298.9 518.3 298.6 516.5 299.6 514.6 298.9 514.3 296.4 509.5 292.1 506.4 292.9 500.6 290.2 497 287.3 494.4 286.8 491.4 288.6 487.4 287.2 487.2 286 488.1 283.6 486 282.9 482.3 282.6 479.9 283.6 477 285.5 476.5 286.5 472.9 287.9 470.4 290.2 469.2 290.2 467.2 292.5 465.2 292.3 464.2 289.4 465.4 287.5 464.8 285.8 465.3 283.9 463.1 281.9 462 279.8 461.5 275.9 462.4 273.2 463.5 272.6 462.5 271.1 462.7 269.3 463.7 268.4 461.9 266.5 462.7 263.3 461 262.4 460.8 259.2 463.6 257 461.7 254.8 463.1 254.3 462.4 252.7 459.9 252.3 458.3 250.6 460.3 246.7 461.9 245.5 461.1 244.2 463.5 242.2 466.5 240.5 467 239.5 468.7 239.5 470.1 241.2 471.7 244.4 474.6 245.7 476.9 245.5 480 242.8 481.6 242.3 483.4 242.8 484.7 242.3 486.9 240 488.5 237.8 489.2 236 488.9 233.2 487.8 229.7 489.1 229.9 490.1 228.6 491.8 228.3 492.6 229.5 496.2 229.3 498.3 231 502.2 230.4 503.8 228.5 505.8 228.2 506.8 227.3 509.3 227.5 510.3 226.6 510.3 224.8 512.3 224.6 514.2 221.9 516.4 221.8 519.4 223.5 519.6 226.4 521.3 227.4 522.2 230.3 525.4 228.8 526 226.1 527.6 226.1 530.1 224.6 530 223.2 532.2 222.6 532.3 221.2 535.3 219.9 537.3 221.5 541.1 222.5 544.9 224.4 547 226.3Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 503.8438 264.9329)" class="abreviation-state">BA</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-es-class" id="espirito-santo">
+                                        <path
+                                            d="M526.6 324.2L532.4 328.2 531.8 330.4 531.7 334.7 532 340.6 530.7 343.3 528.6 344.5 527 347.7 526.8 349.4 525.7 349.9 525.1 353 522.8 355.9 520.7 357.1 519.8 359.8 518.5 361.9 517.5 361.2 515.4 361.4 511.9 360.6 510.3 359.7 510.4 357.2 508.8 356.2 510.3 349.6 514.2 349.4 514.9 346.6 516.2 345.7 516.4 343.7 518.6 341.2 518.8 337.8 517.6 336.2 519 332.3 517.8 331.7 518.1 329.4 516.6 327.8 518.8 325.7 519.1 324.2 524.4 323.4Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 521.8438 350.9329)" class="abreviation-state">ES</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-pb-class" id="paraiba">
+                                        <path
+                                            d="M583 197.9L582.9 199.2 583.9 203.2 584.8 205 584.6 209.1 583.7 209.2 581.9 207.7 579.5 207.5 577.2 208.2 576.6 210.4 573 211.6 572.4 212.2 567.3 212.2 565.7 213.3 565.1 215 563.4 216.5 561.8 217.2 559.7 215.9 559.6 213.9 558.1 213.3 559.3 211.5 558.9 209.6 561 208.8 560.4 207.5 558.3 206.3 556.4 207 555.2 208.5 553.5 209.2 551.1 211.3 548.7 211.7 547.7 212.5 546.6 210.9 544.9 211.6 542.9 210 544.7 206.6 543.2 205.1 542.3 202.8 544.7 196.6 547.3 198 549 198.1 552.6 195.7 553 194.4 558.3 192.8 559.2 193.8 557 196.4 555.7 199.9 557.5 200 558.7 201.4 560.5 200.7 563.4 200.8 564.2 203 565.8 202.4 566.5 196.7 568.7 195.8 569.1 197 572.7 197.5 575.5 197.1 578.7 198 582.2 198.3Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 565.8438 208.9329)" class="abreviation-state">PB</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-rj-class" id="rio-de-janeiro">
+                                        <path
+                                            d="M518.5 361.9L517.4 364.7 518.5 369.6 518.2 370.4 515.5 371.9 511 373.5 507.4 377.3 508.1 379.2 506.8 381.3 503.4 381.1 496.3 381.6 495.8 378 493.8 378.9 494.9 380.7 494.3 381.8 489.9 382.2 487.4 380.8 485.2 381.3 483.9 382.5 482.1 381.1 478.9 382.4 478.1 386 476.6 384.5 477.4 381.7 479.6 380.4 482.1 380.2 484.2 378.3 483.4 377.2 479 377.2 477 374.9 481.2 373.2 483.6 373.1 484.9 372.2 488.4 370.9 491.7 370.9 493 370.3 496.3 370.6 504.4 366.9 503.4 366 506.4 358.8 508.8 356.2 510.4 357.2 510.3 359.7 511.9 360.6 515.4 361.4 517.5 361.2Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 498.5104 377.5996)" class="abreviation-state">RJ</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-rn-class" id="rio-grande-do-norte">
+                                        <path
+                                            d="M583 197.9L582.2 198.3 578.7 198 575.5 197.1 572.7 197.5 569.1 197 568.7 195.8 566.5 196.7 565.8 202.4 564.2 203 563.4 200.8 560.5 200.7 558.7 201.4 557.5 200 555.7 199.9 557 196.4 559.2 193.8 558.3 192.8 553 194.4 552.6 195.7 549 198.1 547.3 198 544.7 196.6 544 195.6 545.8 193.1 547.2 193.3 549 191.2 549.9 188.3 551.3 186.7 553.3 182.5 555.3 181 558.5 179.9 559.1 180.8 562.2 181 564.4 182.7 568.8 182.8 571.9 182.2 576.4 183 578.1 184 579.8 186.9 581.6 194.6Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 563.8438 190.9329)" class="abreviation-state">RN</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-se-class" id="sergipe">
+                                        <path
+                                            d="M567.5 241.3L565.7 241.9 562.1 244.3 560.8 246.1 559.5 248.9 557.7 251.2 555.9 252.5 554 252.9 550.3 250.8 550.6 249.6 547.7 245.4 548.2 243.8 550.7 244.1 552.3 243.3 552.2 240.5 552.8 237.1 550.7 234.5 550.1 232.9 550.4 230.7 555.5 233.1 557.9 233.7 558.7 234.7 561.7 236 563 238.2 566.9 240.4Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 549.8438 247.5996)" class="abreviation-state">SE</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-rr-class" id="roraima">
+                                        <path
+                                            d="M325.1 113.8L326.2 125.5 313.8 125.5 312.7 126.5 310.7 130.4 309.8 133.5 310.7 135.3 308.5 136.8 306.1 137.1 304.1 133.9 302.2 133.2 298.3 134.8 297.5 136.2 297.3 139 296.6 141.6 296.8 143 293.9 142.6 292.3 140.2 289.2 138.1 287.1 136.2 289.3 134.4 288.6 131.4 287.3 130.2 286.3 127.8 287 126.9 286.5 125.3 287.3 122.1 286.8 120 287.8 119.3 286 112.9 284.1 110.7 284.9 109.5 285 107 281.3 106 280 104.5 277.7 103.9 277.7 101.9 272.9 101.9 270.6 101.4 271.1 98.7 268.7 94.3 268.5 91.2 269 89.6 267.6 87.9 265.4 86.5 264 85 264.8 83.6 267.2 83.3 269.6 83.7 270.4 85.9 272.5 85.5 275.2 85.6 276.8 86.4 278.8 85.8 281.9 89.2 284.1 89.2 284.6 87.7 284.1 86 284.6 84.6 286.6 84.5 288.5 83 290.5 83.9 293.6 83.3 295.4 82.2 297.3 82.3 297.9 80.6 303.6 79.2 304.4 77.4 305.9 76.8 307.5 75.2 307 72.3 310.5 72.1 311.8 71.3 314.3 73.2 313.5 79.6 316.1 80 317.5 80.8 316.9 82.8 319.1 85.4 317.5 88.1 315.8 89.1 315.9 91.6 314.5 95 314.1 99 315 102.4 316.8 103.6 316.8 106.8 318.7 109.4 322.2 113.1Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 294.1771 105.5996)" class="abreviation-state">RR</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-ap-class" id="amapa">
+                                        <path
+                                            d="M417.2 105.2L418.1 107 416.6 107.7 415.8 106.4ZM401 140.4L399.4 140.6 396.1 139.4 395.6 137.2 394.4 137.1 394.4 134.9 393.2 133.9 393.3 132.2 391.1 129.9 390.1 130 388.8 125.2 387.9 123.8 388.1 120.6 384.8 117.8 384.2 115.8 382.1 112.6 379.8 112.9 377.8 111.8 376.9 110.2 374.6 109 370.7 108.9 370.1 105.1 370.9 103.6 370.2 101.5 370.9 102.9 372.2 102.9 373.4 104.1 375.2 104.8 379.1 104.1 380.6 102.6 383.6 103.8 385.7 102.8 386.8 103.8 389.7 104.6 392.6 102.4 396.2 95.1 396.2 94.1 397.6 92.9 400.7 87.3 402.3 85.2 404 84.2 405.2 80.2 406.5 81.1 408.3 83.2 409.9 86.2 409.7 91.6 411 96.3 411.8 97.9 413.8 103.9 416 108 417.3 108.6 419.5 108.4 422.5 110.1 422.8 112.6 422.1 116.1 418.6 118.6 416.5 121 414.9 123.9 413 126.1 411.5 126.3 410 128.2 409 128.3 407.3 130.2 406 133 403.3 136 403.1 138.9Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 395.8438 114.5996)" class="abreviation-state">AP</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-ma-class" id="maranhao" >
+                                        <path
+                                            d="M509.1 157.6L509.4 159.7 507.3 162.7 505.5 164.5 502.4 165.3 500.3 167.4 499.5 170.1 496.8 173.3 497 174.9 498.1 176.3 497.2 179.3 497.7 179.9 498.8 183.4 498.5 185.1 495.6 188.6 495.9 193.1 498.3 195.2 498 198.5 496.5 200.8 491.8 201.6 489.4 200.1 485.4 200.9 482.8 204.3 481.1 204.9 478.9 206.8 476.2 208.1 472.2 209.2 470.1 210.6 469.2 213.7 469 215.8 467.3 218.9 467 220.6 465.2 222.7 464.6 224.2 465.5 228.6 466.5 229.5 465.9 235.9 465 237.7 465 239.4 463.5 238.2 460.7 237.7 459.4 236 459.2 234.5 457.2 233.1 458.7 231 456.4 229.5 455.4 226.9 452.9 224.9 454.7 223.2 454.5 222.2 455.5 219.2 456.7 218.6 459 218.5 459.2 213.7 458.2 213 455.1 213.7 453.5 214.6 450.6 210.5 448.4 208.1 448.2 206.3 446.9 205 448.2 203.4 448.9 198.3 449.7 195 449.1 193.6 449.3 191.1 448.5 189.7 448.2 187 443 184.2 441.3 184.5 439.3 183.5 437.3 183.9 435.2 185.5 435.1 185.4 445.1 177.3 446.7 177.5 449.6 173.9 450.6 171.8 453 169.2 453.4 166.3 454.3 164.4 455.7 163.6 457.3 161.2 457.3 157.3 459.9 154.9 459.6 153.3 461.4 150.9 462 149.1 462 146.4 462.9 141.2 463.5 140.9 466.9 141.5 467.4 140.1 470 143.3 471.3 143.7 471.4 146.5 473.4 143.9 475.7 144.1 478.3 147.4 480.3 147.8 480.6 151 482 152.7 480.5 153.9 479.2 157 478.5 160.1 479.2 160.7 481.6 159 482.7 154.6 485.3 153.7 485.6 154.7 484.4 156.6 488.7 154.9 491.9 155.3 491.6 153.1 493.3 153.2 499.8 155.4 501.9 157.2 504.6 157.6 504.9 158.2 507.9 158.5Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 465.1771 184.2663)" class="abreviation-state">MA</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-pi-class" id="piaui">
+                                        <path
+                                            d="M515.5 160.3L513.6 163.6 513.3 164.9 515.1 168.9 515.7 171.4 517.3 174.4 515.6 176.7 516.2 180.8 517.5 183.5 517.5 185.2 518.8 186.4 519.3 192.6 520.4 195.7 521.2 199.5 523.9 200.5 524.4 201.2 522.6 205.6 523.1 207.5 521.5 207.9 522.2 210.2 521.8 211.5 523.1 212.5 522.6 215.4 519 218.9 514.2 221.9 512.3 224.6 510.3 224.8 510.3 226.6 509.3 227.5 506.8 227.3 505.8 228.2 503.8 228.5 502.2 230.4 498.3 231 496.2 229.3 492.6 229.5 491.8 228.3 490.1 228.6 489.1 229.9 487.8 229.7 488.9 233.2 489.2 236 488.5 237.8 486.9 240 484.7 242.3 483.4 242.8 481.6 242.3 480 242.8 476.9 245.5 474.6 245.7 471.7 244.4 470.1 241.2 468.7 239.5 467 239.5 465 239.4 465 237.7 465.9 235.9 466.5 229.5 465.5 228.6 464.6 224.2 465.2 222.7 467 220.6 467.3 218.9 469 215.8 469.2 213.7 470.1 210.6 472.2 209.2 476.2 208.1 478.9 206.8 481.1 204.9 482.8 204.3 485.4 200.9 489.4 200.1 491.8 201.6 496.5 200.8 498 198.5 498.3 195.2 495.9 193.1 495.6 188.6 498.5 185.1 498.8 183.4 497.7 179.9 497.2 179.3 498.1 176.3 497 174.9 496.8 173.3 499.5 170.1 500.3 167.4 502.4 165.3 505.5 164.5 507.3 162.7 509.4 159.7 509.1 157.6 511.7 159.1 514.5 159.3Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 495.8438 215.5996)" class="abreviation-state">PI</text>
+                                    </g>
+                                    <g class="mapa-svg-estados state-ce-class" id="ceara" >
+                                        <path
+                                            d="M558.5 179.9L555.3 181 553.3 182.5 551.3 186.7 549.9 188.3 549 191.2 547.2 193.3 545.8 193.1 544 195.6 544.7 196.6 542.3 202.8 543.2 205.1 544.7 206.6 542.9 210 541 211 540 212.5 537 210.7 536 209.3 532.6 207.3 530.5 207.1 528.2 207.7 523.1 207.5 522.6 205.6 524.4 201.2 523.9 200.5 521.2 199.5 520.4 195.7 519.3 192.6 518.8 186.4 517.5 185.2 517.5 183.5 516.2 180.8 515.6 176.7 517.3 174.4 515.7 171.4 515.1 168.9 513.3 164.9 513.6 163.6 515.5 160.3 515.2 158.8 518.8 158.7 523.7 158 529 158.5 531.8 160.4 535.8 162.2 538.8 164.2 540.1 164.7 543.2 167.4 545.5 167.9 546.2 169.3 547.7 170.5 550.1 173.5 552.8 175.2 554.6 177.5 557.6 178.4Z"
+                                            class="b"/>
+                                        <text transform="matrix(1 0 0 1 527.8438 186.9329)" class="abreviation-state">CE</text>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-10 col-lg-3">
+                        <h2>Nossa rede conta com <strong>43 líderes locais</strong></h2>
+                        <p class="d-none d-lg-block">Clique no mapa ao lado para encontrar uma unidade próxima de você</p>
+                        <p class="d-lg-none">Escolha um estado abaixo para encontrar uma unidade próxima de você</p>
+                        <select class="d-lg-none class-select" name="estados-brasil-sotreq">
+                            <option value="" disabled selected>Escolha um estado</option>
+                            <option value="acre">Acre</option>
+                            <option value="alagoas">Alagoas</option>
+                            <option value="amapa">Amapá</option>
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>
+                            <option value="ceara">Ceará</option>
+                            <option value="distrito-federal">Distrito Federal</option>
+                            <option value="espirito-santo">Espírito Santo</option>
+                            <option value="goias">Goiás</option>
+                            <option value="maranhao">Maranhão</option>
+                            <option value="mato-grosso">Mato Grosso</option>
+                            <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                            <option value="minas-gerais">Minas Gerais</option>
+                            <option value="para">Pará</option>
+                            <option value="paraiba">Paraíba</option>
+                            <option value="parana">Paraná</option>
+                            <option value="pernambuco">Pernambuco</option>
+                            <option value="piaui">Piauí</option>
+                            <option value="rio-de-janeiro">Rio de Janeiro</option>
+                            <option value="rio-grande-do-norte">Rio Grande do Norte</option>
+                            <option value="rio-grande-do-sul">Rio Grande do Sul</option>
+                            <option value="rondonia">Rondônia</option>
+                            <option value="roraima">Roraima</option>
+                            <option value="santa-catarina">Santa Catarina</option>
+                            <option value="sao-paulo">São Paulo</option>
+                            <option value="sergipe">Sergipe</option>
+                            <option value="tocantins">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="unities">
+            <div class="container states-lists">
+                <div class="row justify-content-around acre hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Acre</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around alagoas hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Alagoas</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around amapa hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Amapá</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="macapa-4"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG-20200615-WA0120-Alex-Farias-150x150.jpg" class="img-fluid rounded-circle"/>José Alex Pimentel Farias</a></li>
+                        <li class="text-truncate"><a href="" data-local="macapa-3"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG_20200325_110111_654-Valquiria-Ximendes-150x150.jpg" class="img-fluid rounded-circle"/>Valquiria Ximendes de Moraes </a></li>
+                        <li class="text-truncate"><a href="" data-local="1040-2"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG-20191125-WA0060-Kely-Mesquita-150x150.jpg" class="img-fluid rounded-circle"/>Kely Mesquita Caetano</a></li>
+                        <li class="text-truncate"><a href="" data-local="macapa-2"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/2020-03-30-09.37.46-1-Giovanna-Lourinho-150x150.jpg" class="img-fluid rounded-circle"/>Giovanna Gabrielle Costa Lourinho</a></li>
+                        <li class="text-truncate"><a href="" data-local="macapa"><img src="https://mapaeducacao.com/wp-content/uploads/2019/07/ev.-150x150.jpg" class="img-fluid rounded-circle"/>Evelyn Auzier </a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around amazonas hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Amazonas</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="manaus"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/ft-Izabela-Borges-150x150.jpeg" class="img-fluid rounded-circle"/>Izabela Borges de Vasconcelos</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around bahia hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Bahia</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="salvador-2"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/Screenshot_2020-07-29-13-42-15-184_com.miui_.gallery-Rubem-Sampaio-150x150.jpg" class="img-fluid rounded-circle"/>Rubem Sampaio</a></li>
+                        <li class="text-truncate"><a href="" data-local="salvador"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/55-71-8953-2027-20200729_200045-João-Pedro-Neves-150x150.jpg" class="img-fluid rounded-circle"/>João Pedro Neves</a></li>
+                        <li class="text-truncate"><a href="" data-local="salvador-4"><img src="https://mapaeducacao.com/wp-content/uploads/2018/08/photo_2020-07-29_20-50-46-Maryvansley-Nunes-150x150.jpg" class="img-fluid rounded-circle"/>Maryvânsley Nunes de Sá Reis</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around ceara hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Ceará</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="caucaia"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/FOTO-MAPA-Romário-Mathias-150x150.jpeg" class="img-fluid rounded-circle"/>Romário Matias Alves</a></li>
+                        <li class="text-truncate"><a href="" data-local="jaguaribe"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/Foto-005-Romario-Barbosa-150x150.jpeg" class="img-fluid rounded-circle"/>Romário Soares Barbosa</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around distrito-federal hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Distrito Federal</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="brasilia-2"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG_2323-Adler-Gabriel-150x150.jpg" class="img-fluid rounded-circle"/>Adler Gabriel da Silva Campos</a></li>
+                        <li class="text-truncate"><a href="" data-local="brasilia"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/1EABABB4-F32C-4F68-9C21-C6DDD2F3258E-Emily-Maria-150x150.jpeg" class="img-fluid rounded-circle"/>Emily Maria Machado Cursino </a></li>
+                        <li class="text-truncate"><a href="" data-local="brasilia-3"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/Foto_perfil-150x150.jpeg" class="img-fluid rounded-circle"/>Vinicius Machado</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around espirito-santo hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Espírito Santo</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around goias hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Goiás</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="cristalina"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/Yas-e-Alvaro-0034-Yasmine-da-Mata-150x150.jpg" class="img-fluid rounded-circle"/>Yasmine Candida da Mata Mendonça</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around maranhao hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Maranhão</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="barra-do-corda"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG_20200801_222738_882-Sarah-Cristina-150x150.jpg" class="img-fluid rounded-circle"/>Sarah Cristina Castro da Cruz </a></li>
+                        <li class="text-truncate"><a href="" data-local="sao-luis-3"><img src="https://mapaeducacao.com/wp-content/uploads/2018/08/foto-Arão-Mota-150x150.jpg" class="img-fluid rounded-circle"/>Arão Salatiel das Mercês Mota</a></li>
+                        <li class="text-truncate"><a href="" data-local="sao-luis-2"><img src="https://mapaeducacao.com/wp-content/uploads/2018/08/2020-05-31-01.47.07-1-Bruno-Veras-150x150.jpg" class="img-fluid rounded-circle"/>Bruno Veras Penha</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around mato-grosso hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Mato Grosso</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around mato-grosso-do-sul hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Mato Grosso do Sul</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around minas-gerais hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Minas Gerais</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="belo-horizonte"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/FB_IMG_1576067289491-Caio-Damazio-150x150.jpg" class="img-fluid rounded-circle"/>Caio Lucca Damazio</a></li>
+                        <li class="text-truncate"><a href="" data-local="belo-horizonte-3"><img src="https://mapaeducacao.com/wp-content/uploads/2019/09/image-1-150x150.png" class="img-fluid rounded-circle"/>André Dell'Isola Denardi</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around para hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Pará</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="canaa-dos-carajas"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-07-at-21.05.42-150x150.jpeg" class="img-fluid rounded-circle"/>Mailson Cruz de Aguiar</a></li>
+                        <li class="text-truncate"><a href="" data-local="belem"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/WhatsApp-Image-2020-06-25-at-10.08.29-Luyann-Correa-150x150.jpeg" class="img-fluid rounded-circle"/>Luyann Rodrigues</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around paraiba hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Paraíba</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around parana hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Paraná</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around pernambuco hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Pernambuco</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="gravata"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/11A8996B-4997-4B25-9B38-A2DDA6A3CE1D-Jessica-Barbosa-150x150.jpeg" class="img-fluid rounded-circle"/>Jessica Barbosa da Silva</a></li>
+                        <li class="text-truncate"><a href="" data-local="lagoa-de-itaenga"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/07.02.2019-Passagem-para-aluno-da-ONU-Fotos-Pedro-Menezes-7_3-Estênio-Ferreira-150x150.jpg" class="img-fluid rounded-circle"/>Estênio Ferreira Oliveira da Silva</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around piaui hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Piauí</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around rio-de-janeiro hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Rio de Janeiro</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="sao-joao-de-meriti"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/isabella-Isabella-Cunha-150x150.jpg" class="img-fluid rounded-circle"/>Isabella Cunha Alves da Silva</a></li>
+                        <li class="text-truncate"><a href="" data-local="rio-de-janeiro-2"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/Foto-Pedro-Mercadante-Pedro-Mercadante-150x150.jpg" class="img-fluid rounded-circle"/>Pedro Paulo Alves Mercadante</a></li>
+                        <li class="text-truncate"><a href="" data-local="rio-de-janeiro"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/4d2272e8-5a23-4c55-99d1-07360644d19d-1-Juliana-Carmo-150x150.jpg" class="img-fluid rounded-circle"/>Juliana Bogéa do Carmo</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around rio-grande-do-norte hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Rio Grande do Norte</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around rio-grande-do-sul hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Rio Grande do Sul</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="santa-maria"><img src="https://mapaeducacao.com/wp-content/uploads/2019/09/Jaque-Jaqueline-Cunha-150x150.jpg" class="img-fluid rounded-circle"/>Jaqueline Carvalho Cunha</a></li>
+                        <li class="text-truncate"><a href="" data-local="porto-alegre"><img src="https://mapaeducacao.com/wp-content/uploads/2019/09/20190924_175611-150x150.jpg" class="img-fluid rounded-circle"/>Caroline Dourado</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around rondonia hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Rondônia</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="porto-velho"><img src="https://mapaeducacao.com/wp-content/uploads/2018/08/perfil-Ellen-Nogueira-150x150.jpg" class="img-fluid rounded-circle"/>Ellen Nogueira Gomes</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around roraima hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Roraima</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around santa-catarina hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Santa Catarina</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+                <div class="row justify-content-around sao-paulo hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>São Paulo</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="piracicaba"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/5-Tatiana-Dezen-150x150.jpg" class="img-fluid rounded-circle"/>Tatiana Karine Dezen</a></li>
+                        <li class="text-truncate"><a href="" data-local="sao-paulo-4"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-06-at-15.20.41-Helen-Jeronimo-150x150.jpeg" class="img-fluid rounded-circle"/>Helen Jerônimo Martins</a></li>
+                        <li class="text-truncate"><a href="" data-local="jundiai"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/Perfil-Vinícius-Vinícius-de-Barros-Silva-150x150.jpg" class="img-fluid rounded-circle"/>Vinícius de Barros Silva</a></li>
+                        <li class="text-truncate"><a href="" data-local="sao-paulo-3"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/foto-Prof-José-Guilherme-Zago-150x150.png" class="img-fluid rounded-circle"/>José Guilherme Zago de Souza</a></li>
+                        <li class="text-truncate"><a href="" data-local="sao-paulo-2"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/Foto-Mapa.2-Isadora-Tortella-150x150.jpeg" class="img-fluid rounded-circle"/>Isadora Tortella</a></li>
+                        <li class="text-truncate"><a href="" data-local="sorocaba-2"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/leo-Leonardo-Jesus-150x150.jpg" class="img-fluid rounded-circle"/>Leonardo Dias de Jesus</a></li>
+                        <li class="text-truncate"><a href="" data-local="sorocaba"><img src="https://mapaeducacao.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-07-25-at-4.09.44-PM-Leonardo-Souza-Flores-150x150.jpeg" class="img-fluid rounded-circle"/>Leonardo Souza Flores</a></li>
+                        <li class="text-truncate"><a href="" data-local="824-2"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/IMG_4888-150x150.jpg" class="img-fluid rounded-circle"/>Jhonatan Ferreira Alencar</a></li>
+                        <li class="text-truncate"><a href="" data-local="sao-paulo"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/WhatsApp-Image-2020-08-04-at-15.05.10-Julia-Peixoto-150x150.jpeg" class="img-fluid rounded-circle"/>Julia Peixoto</a></li>
+                        <li class="text-truncate"><a href="" data-local="salto"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/unnamed-150x150.jpg" class="img-fluid rounded-circle"/>Fabio Jorge</a></li>
+                        <li class="text-truncate"><a href="" data-local="guara"><img src="https://mapaeducacao.com/wp-content/uploads/2019/10/3-Lucas-Luiz-150x150.jpg" class="img-fluid rounded-circle"/>Lucas da Silva Luiz</a></li>
+                        <li class="text-truncate"><a href="" data-local="sao-paulo-5"><img src="https://mapaeducacao.com/wp-content/uploads/2018/08/Foto-Thiago-Camargo-150x150.jpg" class="img-fluid rounded-circle"/>Thiago Neves Camargo</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around sergipe hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Sergipe</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <ul class="col-10 col-lg-5 unities-list">
+                        <li class="text-truncate"><a href="" data-local="aracaju"><img src="https://mapaeducacao.com/wp-content/uploads/2018/08/coordenador-145-150x150.jpg" class="img-fluid rounded-circle"/>Antonio Cardoso da Silva Filho</a></li>
+                    </ul>
+                </div>
+                <div class="row justify-content-around tocantins hidden">
+                    <div class="col-10 col-lg-4">
+                        <h2>Tocantins</h2>
+                        <a href="#map">Trocar</a>
+                        <p>Não encontrou uma unidade perto de você? Fique atento ao nosso processo seletivo para ser nosso representante na sua região!</p>
+                        <!--<a href="http://mapaeducacao.com/contato/" class="btn btn-block btn-primary">Entre em contato</a>-->
+                    </div>
+                    <p class="col-10 col-lg-5">Ainda não há nenhuma unidade local neste estado.</p>
+                </div>
+            </div>
+        </section>
+        <div id="video" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade unity-card" tabindex="-1" role="dialog" aria-labelledby="UnityInfo" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="aracaju hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Aracaju</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2018/08/coordenador-145-150x150.jpg">
+                                        <h3>Antonio Cardoso da Silva Filho</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:sergipe@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Eu participo do Mapa há 3 anos. Já realizei algumas atividades como abaixo-assinado, pesquisa, conferência. Sou voluntário de um outro projeto há 4 anos e tenho a educação como prioridade na luta por uma sociedade melhor.</p>
+                                    <p>O Projeto dos Sonhos. Já fez parte do Mombak, inclusive, e existe há 4 anos impactando crianças e jovens em Aracaju.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="barra-do-corda hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Barra do Corda</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG_20200801_222738_882-Sarah-Cristina-150x150.jpg">
+                                        <h3>Sarah Cristina Castro da Cruz </h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:sarah.cristina@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p> Sou uma jovem menina curiosa que ama se &#8220;jogar&#8221; em projetos, movimentos, coletivos e por consequência conhecer pessoas novas. Não aceito a idéia de que as coisas são analienáveis e por isso não há o que possa ser feito,  acredito nas juventudes, acredito em pessoas, acredito na educação.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="belem hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Belém</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/WhatsApp-Image-2020-06-25-at-10.08.29-Luyann-Correa-150x150.jpeg">
+                                        <h3>Luyann Rodrigues</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://m.facebook.com/luyann.rodrigues.37?ref=bookmarksoto" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:luyann@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Oi, Sou Luyann Rodrigues, Professor de ciências e biologia, Pesquisador e Biólogo. Nasci e cresci em uma região onde habita a maior florestas tropicais do mundo, a Amazônia, estou no extremo Oriente, em Belém, e conheço de perto a realidade da educação por aqui. A grande extensão territorial que encontramos aqui é um dos fatores que torna a educação nesse bioma um grande desafio, principalmente pela multiculturalidade, pelas multicrenças, modos de vida, de subsistência e de sobrevivência, pelas comunidades que são cortadas por rios gigantes, onde as escolas estão inseridas nas margens, e os estudantes precisam chegar a elas através de barcos ou rabetas… Por isso que um dos meus sonhos grandes é mudar a realidade, o acesso e a permanência das crianças, dos jovens e adultos, a escola. E um dos meus objetivos é engajar, cada vez mais, os jovens a serem mais participativo nas tomadas de decisões educacionais e na cobrança por melhores condições de infraestrutura escolar e de ensino em Belém e no estado Pará, para que eles possam ser os principais agentes de mudança nas suas comunidades e para que eles possam sonhar cada vez mais com a transformação das suas cidades e localidades em que estão inseridos, se tu quiseres fazer parte dessa mudança participe conosco.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="belo-horizonte hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Belo Horizonte</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/FB_IMG_1576067289491-Caio-Damazio-150x150.jpg">
+                                        <h3>Caio Lucca Damazio</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:caio.damazio@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Mineiro. Bacharel em Direito pela UFOP e pós-graduando em Direito Eleitoral pela PUC Minas. Advogado e Servidor Público. Líder do Mapa Educação e defensor de uma educação pública, gratuita e de qualidade. Pagodeiro e viciado em doce de leite. Contador de histórias nas horas vagas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="belo-horizonte-3 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Belo Horizonte</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/09/image-1-150x150.png">
+                                        <h3>André Dell'Isola Denardi</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://www.facebook.com/andre.denardi.9" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:andre.denardi@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Mestre em Administração Pública, Especialista em Poder Legislativo e Políticas Públicas, Bacharel em Direito pela PUC-Minas e Ciências do Estado pela<br />
+                                        UFMG, com experiência disciplinar nos departamentos de Ciência Política e História da Universidade Paris I &#8211; Panthéon Sorbonne, trabalhou durante cinco anos como assessor parlamentar na Assembleia Legislativa de Minas Gerais.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brasilia hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Brasília</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/1EABABB4-F32C-4F68-9C21-C6DDD2F3258E-Emily-Maria-150x150.jpeg">
+                                        <h3>Emily Maria Machado Cursino </h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:emily.machado@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>A minha trajetória e amor pela educação surgiram desde cedo e os laços mais efetivos se estreitaram no EM com a escolha da carreira profissional e o contato com docentes queridos. Vi a minha perspectiva e ações mudarem completamente quando participei da conferência do mapa, desde então o ativismo e paixão pela área educacional só se expandiram. Tenho 18 anos, sou estudante de letras e divido meu tempo com uma outra paixão: a confeitaria. Nas horas livres curto sair com os meus amigos, ver séries e conhecer um pouco mais do quadradinho que moro! Amo viajar e os meus destinos favoritos são os que tem praia e muuuuito calor!❤️</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brasilia-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Brasília</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG_2323-Adler-Gabriel-150x150.jpg">
+                                        <h3>Adler Gabriel da Silva Campos</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:adler.campos@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Sou estudante de graduação em administração pela Universidade de Brasília. No meio acadêmico, tenho me dedicado a pesquisas no âmbito da administração pública. Nas horas livres, gosto de assistir séries e filmes, de ler e também de jogos online.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brasilia-3 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Brasília</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/Foto_perfil-150x150.jpeg">
+                                        <h3>Vinicius Machado</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:vinicius.machado@mapaeducacao.com " class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Formado em Geografia pela Universidade de Brasília (UnB) é professor do Ensino Fundamental e Médio além de cursinhos preparatórios para vestibulares. Atua na área da educação desde 2016 em cursinhos populares e projetos voltados para a educação. Foi presidente do Vestibular Cidadão onde atualmente está como Diretor de Comunicação. Além do trabalho realizado na Mapa Educação é Embaixador Politize!, membro da Brasil Cursinhos, Embaixador do ConexãoAfro e também integrante do GeonasRedes e Mova-se. Pesquisa sobre educação no âmbito de práticas educacionais voltadas à Geografia já passando também pelo Movimento Empresa Júnior.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="canaa-dos-carajas hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Canaã dos Carajás</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-07-at-21.05.42-150x150.jpeg">
+                                        <h3>Mailson Cruz de Aguiar</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:mailson@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Olá, Pessoal! Sou o Mailson, Internacionalista, pesquisador e ativista social.<br />
+                                        Gosto de começar a contar um pouquinho sobre mim a partir da oportunidade que tive de morar na frente de uma escola pública na zona rural de Canaã dos Carajás. Lá fiz todo o ensino fundamental e onde também comecei a me envolver ativamente como voluntário na construção da biblioteca comunitária e na coordenação de um grupo de jovens ambientalistas. Depois consegui uma bolsa de estudos para cursar o ensino médio na zona urbana do município. Nesse período, mobilizei os estudantes para participar de outro grupo de jovens ambientalistas e participei também como membro de um grupo de jovens promotores da saúde. Decidi que queria fazer uma graduação para estar melhor preparado para os desafios da vida e da sociedade, então fui estudar Relações Internacionais na capital do país sem deixar para traz as primeiras pegadas. Acredito muito que é o viver que dar valor e sentido, por isso meu compromisso e dedicação por uma educação pública de qualidade, essencial para uma sociedade mais justa, igualitária e sustentável.&#8221;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caucaia hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Caucaia</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/FOTO-MAPA-Romário-Mathias-150x150.jpeg">
+                                        <h3>Romário Matias Alves</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:romario.matias@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Meu nome é Romário Matias, sou professor de Educação Física pela Universidade Estadual do Ceará. Sou de Caucaia, município da região metropolitana de Fortaleza, onde estou, atualmente, como coordenador pedagógico em uma escola da rede pública municipal de ensino. Esse ano (2020), concluí a pós graduação em Gestão e Organização Escolar, pela Universidade Anhanguera.<br />
+                                        Meu engajamento com educação surgiu enquanto estava como professor na periferia de Fortaleza, onde percebi que eu poderia ser um agente impulsionador para aqueles jovens. Nesse meio tempo, participei da Conferência do Mapa e, ali, pude conhecer muita gente bacana que pensa e que luta pela mesma causa que a minha e isso me estimulou mais ainda a querer impactar outras pessoas através da educação! Sou apaixonado pela docência e pelas ações que posso colocar em prática por meio de novas metodologias e tenho dedicado boa parte do meu tempo para estudar e me aprofundar mais nessas abordagens. Sou sempre aberto ao diálogo e a novos aprendizados por meio da interação e troca mútua de conhecimentos com outras pessoas! &#8220;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cristalina hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Cristalina</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/Yas-e-Alvaro-0034-Yasmine-da-Mata-150x150.jpg">
+                                        <h3>Yasmine Candida da Mata Mendonça</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:"yasmine.damata@mapaeducacao.com "" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Sou graduada em Economia pela UFU e Mestre em Economia pela UEM. Tenho experiência em docência no ensino técnico e superior (presencial/EAD) e atuei na equipe técnica do Conselho de Desenvolvimento Econômico de Maringá com lideranças da sociedade civil e poder público construindo projetos com visões de futuro para a cidade nas áreas de saúde, tecnologia, finanças e educação, que é a minha área preferida. Sou apaixonada pela área da Educação por acreditar em seu poder de reduzir desigualdades e criar oportunidades. Também sou apaixonada pelo ensino da Educação Financeira por também acreditar na sua importância e no seu potencial transformador. Acredito que grandes transformações são geradas mesmo com pequenos começos e quero fazer parte da mudança que eu desejo para o Brasil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gravata hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Gravatá</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/11A8996B-4997-4B25-9B38-A2DDA6A3CE1D-Jessica-Barbosa-150x150.jpeg">
+                                        <h3>Jessica Barbosa da Silva</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:jessica.barbosa@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Sou estudante de doutorado e pesquisadora na área de Educação Matemática, e fruto do ensino público de qualidade. Além da Matemática e da Educação, sou apaixonada por música e poesia. Acredito na educação como uma das formas de mudar o mundo e acredito que isso pode acontecer através da escola pública. Ativista pela educação, sempre estive envolvida em projetos estaduais e nacionais que acreditam no jovem como protagonista da sua história e capaz de mudar o seu entorno. Meu objetivo principal é informar aos estudantes sobre suas possibilidades e lutar para que eles tenham acesso às oportunidades.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guara hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Guará</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/3-Lucas-Luiz-150x150.jpg">
+                                        <h3>Lucas da Silva Luiz</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://www.facebook.com/lucas.luiz.98?ref=bookmarks" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:lucas.luiz@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Sou natural de Guará-SP. Mestre em História pela Universidade Federal de Uberlândia (UFU), Pós-Graduado em Educação a Distância e Graduado em História pela Universidade Federal do Triângulo Mineiro (UFTM), Servidor Público e Professor Coordenador do Cursinho Popular de Guará-SP.<br />
+                                        Parafraseando, Aristóteles, “A educação tem raízes amargas, mas os seus frutos são doces”, acredito veementemente que a educação nos transforma, em sujeitos mais críticos e humanos, detentores de conhecimentos. E nesse sentido, juntamente com a equipe do Mapa, confio, que podemos colaborar para uma educação mais justa e democrática, ressaltando a participação do jovem, sua liderança e protagonismo, em prol da educação em todo Brasil. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jaguaribe hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Jaguaribe</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/Foto-005-Romario-Barbosa-150x150.jpeg">
+                                        <h3>Romário Soares Barbosa</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://www.facebook.com/barbosaromario" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:romario@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Graduado em Gestão Pública (UNESA, 2019) com registro no CRA/CE nº 6-722; Graduando em Gestão Ambiental (UNICESUMAR) e Licenciatura em Ciências Biológicas (IFCE); Possui MBA Executivo em Gerenciamento de Projetos (UCAM, 2020). É Especialista em Gestão de Políticas Públicas (FUNIP, 2020) e Administração Pública (FUNIP, 2020); Pós-graduando em Docência no Ensino Superior (UNICESUMAR) e Direito Administrativo e Gestão Pública (URCA). Professor pesquisador associado da Sociedad Latinoamaericana de Ciencia e Tecnología (SOLACYT); Consultor especialista em soluções estratégicas para governança pública, consultoria de formulação, implementação e monitoramento de políticas públicas, formações executivas em gestão pública e insights comportamentais aplicados à política local. Recebeu destaque em inúmeros eventos de ciência, tecnologia e inovação, por diversas organizações nacionais e internacionais, totalizando mais de 15 premiações honorificas. Possui interesse nas áreas de Docência na Educação Profissional, Tecnológica e Superior; Gestão e Planejamento Governamental; Políticas Públicas para o Desenvolvimento Local; Implementação da Agenda 2030 para os Objetivos de Desenvolvimento Sustentável (ODS/ONU); Gestão Social e Terceiro Setor; Captação de Recursos; Elaboração, Implementação e Avaliação de Projetos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jundiai hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Jundiaí</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/Perfil-Vinícius-Vinícius-de-Barros-Silva-150x150.jpg">
+                                        <h3>Vinícius de Barros Silva</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:vinicius.barros@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Tenho 20 anos, sou estudante bolsista de Ciências Sociais na PUC-Campinas e estou assessor na Prefeitura de Jundiaí. Me interesso por políticas públicas, educação e desenvolvimento sustentável. Conclui os dois últimos anos do ensino médio na escola pública. Ali eu pude sentir na prática tudo aquilo que falam negativamente sobre a educação pública e ao mesmo tempo vi muita luta daqueles e daquelas que entendem a importância da escola pública. Eu comecei a me questionar quantas pessoas já passaram, estavam passando e as que ainda iriam passar por ali. A maioria dos estudantes brasileiros estão nas escolas públicas, ou seja, é o futuro do país. Eu sentia, e sinto, um chamado muito forte para ajudar a construir a transformação da educação brasileira pra melhor, e o Mapa é o espaço ideal para essa construção. Nas horas livres eu gosto de caminhar ouvindo música (tenho playlist de quase todos os gêneros), assistir alguma série ou filme, desde um documentário até uma comédia clichê, e dar muita risada com a minha família e amigos. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lagoa-de-itaenga hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Lagoa de Itaenga</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/07.02.2019-Passagem-para-aluno-da-ONU-Fotos-Pedro-Menezes-7_3-Estênio-Ferreira-150x150.jpg">
+                                        <h3>Estênio Ferreira Oliveira da Silva</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:estenio.ferreira@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Natural de Condado, radicado em Lagoa de Itaenga, municípios do interior de Pernambuco, aos 22 anos, sou o mais velho de seis filhos da ex-cortadora de cana-de-açúcar, Dona Josefa. Aprendi a ler e a escrever aos 7 anos numa escola pública. A partir daí percebi que deveria contribuir para que outras pessoas tivessem essa oportunidade. Entre 2015 e 2016, na Assembleia Legislativa do Estado de Pernambuco, atuei como estagiário de gabinete parlamentar. Em seguida, por três anos, estive nomeado assessor parlamentar na Câmara Municipal de Lagoa de Itaenga. Como voluntário, criei a Biblioteca Comunitária da Vila Boa Esperança, fui comunicador na Rádio Comunitária Itaenga FM, participante do Politize e delegado da 23ª Assembleia da Juventude na Universidade de Nova York (EUA). Desde o início de 2020, estou servidor público na Secretaria Municipal de Educação em Lagoa de Itaenga. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="macapa-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Macapá</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/2020-03-30-09.37.46-1-Giovanna-Lourinho-150x150.jpg">
+                                        <h3>Giovanna Gabrielle Costa Lourinho</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:giovanna.lourinho@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Sou Giovanna Lourinho, acadêmica de licenciatura em Sociologia na Universidade Federal do Amapá, pesquisadora em Ciência Política, mentora no Programa de Mentorias Vem Ser Protagonista e ativista pela educação no Mapa.<br />
+                                        Acredito na política e educação como pilares da transformação de uma sociedade anômica e luto para que minorias ocupem os espaços que lhes foram restringidos.<br />
+                                        Nas horas vagas sou amante de games, leituras e handball.&#8221;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="1040-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Macapá</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG-20191125-WA0060-Kely-Mesquita-150x150.jpg">
+                                        <h3>Kely Mesquita Caetano</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:kely.mesquita@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Me chamo kely Mesquita Caetano, tenho 21 anos, atualmente sou acadêmica de licenciatura em Pedagogia pela UEAP (Universidade do Estado do Amapá).Meu intresse pela educação vem do ensino médio,onde eu morava em uma comunidade de zona rural e o acesso a escola era extremamente difícil e desafiador em que eu passava quase 2horas dentro do ônibus e que o mesmo atendia 3 comunidades rurais, e diante disso, na maioria das vezes eu me enxergava sem perspectiva nenhuma de futuro pois o caminho que percorriamos até escola não era fácil, e uma dessas viagens quase perdemos a vida,e eu quase desisti dos estudos. E entre altos e baixos , conheci um professor de artes visuais no último ano do ensino médio e ele foi essencial para que eu pudesse pensar sobre ter um futuro e em mudar minha realidade de vida apartir daquele momento, sobre às orientações do docente eu aprendi sobre a importância do Enem e das universidades públicas,e que eu poderia fazer o exame e engressar no ensino superior, e foi a partir desse momento que eu verdadeiramente me encantei pela palavrinha mágica chamada &#8220;&#8221;Educação&#8221;&#8221; eu não me continha de tanta emoção em perceber que mesmo em meio às dificuldades eu estava tendo a oportunidade de saber que eu poderia mudar minha vida e escrever minha própria história! e tudo isso por um simples diálogo com um professor! E foi nesse mesmo diálogo que tivemos que eu entendi pela 1 vez o que era pesquisa científica.Tive a oportunidade de fazer uma pesquisa científica e participar de um evento (feceap) feira de Ciências e Engenharia do Amapá onde pude ganhar o 1 lugar como projeto pra representar o Estado do Amapá na (frebace, em São Paulo)tudo sob orientação do professor que me mostrou o real sentido de se sentir incluído e fazer parte no processo de Educação, não consegui viajar por motivos de a minha escola ser pública e não ter tido verba para me enviar ao evento em São Paulo, mais a experiência ficou marcada profundamente em minha memória. Em 2018 entrei na Universidade e desde aí minha vida academica vem sendo marcada fortemente por oportunidades maravilhosas que só uma instituição pública pode proporcionar! Dentre essas oportunidades consegui passar  no Programa Institucional de Bolsas de Iniciação a Docência( PIBID)  no segundo semestre do curso e fazer uma pesquisa onde ela me proporcionou viajar para Salvador para participar da ANFOPE. Em junho de 2019 conheci o mapaeducacao e me identifiquei com o movimento,vi uma excelente oportunidade de aprendizado e de mudança para outros jovens que moram em lugares onde o acesso a Educação mesmo que mínimo é extremamente precário, então percebi que eu poderia ser uma ferramenta de mudança para outros jovens, principalmente os da zona rural, e,ribeirinhos. Meu envolvimento com o movimento têm sido muito enriquecedor, pois já tive inúmeras oportunidades de participar de grandes ações e mobilizações.<br />
+                                        Estou em processo de conquista do meu espaço como liderança do GT Primeira Infância,e a cada dia que passa eu aprendo muito com todas as pessoas que fazem parte desse time,sei que ainda preciso evoluir muito, mais cada passo que eu dou eu estou construindo minha identidade e o meu papel dentro do movimento.&#8221;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="macapa-3 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Macapá</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG_20200325_110111_654-Valquiria-Ximendes-150x150.jpg">
+                                        <h3>Valquiria Ximendes de Moraes </h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:valquiria.ximendes@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Meu nome é Valquiria Ximendes, tenho 20 anos, acadêmica de enfermagem e  apaixonada pelo voluntariado. Atualmente atuo como líder do Movimento Mapa Educação em Macapá/AP, trabalhando em especial na área da primeira infância.  </p>
+                                    <p>Além disso, sou coordenadora do projeto social Espalhe Amor, um projeto realizado com cerca de 20 voluntários, com o foco em desenvolver novas oportunidades para as crianças através de atividades sempre envolvendo a educação e o direito de uma infância saudável.  O projeto também  realiza outras atividades no decorrer do ano atendendo famílias em situação de vulnerabilidade.  </p>
+                                    <p>Atuar como líder no mapa faz parte da continuação de tudo que eu acredito que seja o voluntariado. Transformação, um futuro inovador e novas oportunidades. Sempre acreditei que o voluntariado era capaz de transformar vidas, e sendo ativista pela educação no mapa vi isso acontecer de fato, jovens protagonistas lutando por um futuro e pelos seus ideais, no Mapa tive a oportunidade de me encontrar, saber o meu protagonismo assim como tantos outros jovens.  </p>
+                                    <p>Minha trajetória no Mapa começou com um convite de alguém que acreditava no meu potencial, e hoje tenho a missão de impactar a vida de outros jovens a serem ativistas lutando por uma educação de qualidade e acessível a todos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="macapa-4 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Macapá</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/IMG-20200615-WA0120-Alex-Farias-150x150.jpg">
+                                        <h3>José Alex Pimentel Farias</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:alex.farias@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Sou apaixonado por política, militante estudantil e ativista por uma educação de qualidade. Em 2017 tive meu primeiro contato com o movimento estudantil após ser eleito jovem vereador pelo programa Câmara Jovem Macapá, durante a simulação como parlamentar da juventude me aproximei da União dos Estudantes dos Cursos Secundários do Amapá &#8211; UECSA.</p>
+                                    <p>Em 2018 formei uma chapa para disputar as eleições para mesa diretora da Câmara Jovem, obtive sucesso no pleito e me tornei presidente da mesa diretora da Câmara Jovem. No mesmo ano fui indicado pela UECSA para compor o Fórum Estadual de Educação/AP &#8211; FEE/AP, onde disputei as eleições para fazer parte da coordenação do Fórum e ganhei a indicação do seguimento que faço parte, sendo assim,o primeiro estudante secundarista a fazer parte da coordenação do FEE/AP. No Fórum de Educação participei de conferências municipais e estaduais de educação como delegado nato.</p>
+                                    <p>Em 2019 me tornei vice-presidente da UECSA e entrei para Gerência de Protagonismo Estudantil da Secretaria Estadual de Educação do Amapá &#8211; GPE/SEED. Atualmente trabalho na GPE/SEED onde eu defendo dentro do governo pautas do movimento estudantil, entre elas, uma política educacional que visa o protagonismo estudantil. Também no ano de 2019 fui selecionado para compor o time de protagonistas da Fundação Protagonista, nesse mesmo ano que eu conheci o Mapa Educação núcleo Amapá e me tornei ativista do movimento.</p>
+                                    <p>Em 2020 minha nova missão é de fiscalizar o recursos do Fundeb da capital Macapá e do estado Amapá, onde sou membro dos Conselhos de Acompanhamento e Controle Social do Fundeb Macapá e Amapá &#8211; CACS FUNDEB. Sendo que no CACS Macapá sou vice-presidente do conselho.</p>
+                                    <p>Sou como todo bom brasileiro, onde sonho em uma educação de qualidade e uma juventude responsável pela causa social, não sendo tratada como o futuro, mas como o presente e o motivo de um futuro melhor. Por ter este pensamento que aceitei o desafio de ser militante do Mapa Educação/AP e ser o líder do movimento no GT Políticas Públicas.&#8221;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="macapa hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Macapá</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/07/ev.-150x150.jpg">
+                                        <h3>Evelyn Auzier </h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://www.facebook.com/evelyn.auzier" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:evelyn@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Meu interesse pela educação vem desde pequena, sempre fui uma criança que via na educação a oportunidade de transformar o mundo. Em 2015 foi a primeira vez que tive contato com o Mapa Educação e desde então acompanho as atividades do movimento. Em 2018 fui convidada para ser coordenadora de Núcleo do Mapa Educação no Amapá e venho trabalhado para ampliar o movimento e engajar mais jovens para atuar na luta pela educação no Brasil. Também sou alguém acredita na política como ferramenta de transformação social, que ama ciência, tecnologia e inovação e que acredita que todas essas coisas somadas possam ajudar a sociedade a se desenvolver. Atualmente trabalho em uma Startup de Educação e tenho sido muito atuante em causas que promovem o desenvolvimento, fomento e fortalecimento do ecossistema de startups local, desde tecnologia e inovação até iniciação científica para crianças, no último caso, por fazer parte do Instituto Nacional Leva Ciência. </p>
+                                    <p>Espero poder impactar minha geração e cumprir a missão que temos com o mapa de capacitar e empoderar jovens para lutarem por uma educação de qualidade para todos. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manaus hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Manaus</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/ft-Izabela-Borges-150x150.jpeg">
+                                        <h3>Izabela Borges de Vasconcelos</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:izabela.borges@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Cresci em bairro periférico, estudando nas escolas públicas do bairro e com pouca ou nenhuma noção do que me esperava depois da escola. Esbarrei em  pessoas que me abriram portas através de algumas poucas orientações, com isso acabei crescendo com a urgência de levar informação a quem mais precisa, porque não vejo coerência em esperar que alguém busque uma vida melhor que nem conhece ou que não ache possível. Ainda criança me envolvi com questões sociais, mesmo sem entender ou dar nome ao que estava fazendo, só sei que desde lá não houve um ano em que não me envolvi com alguma causa, seja na minha comunidade, escola, instituições na minha cidade ou, como no mapa, a nível nacional. Em paralelo a isso, estou sempre procurando aventuras, aproveitando esse paraíso que é a Amazônia! ❤️ Trilhas, remo, cachoeiras, escalada e o que mais aparecer!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="piracicaba hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Piracicaba</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/5-Tatiana-Dezen-150x150.jpg">
+                                        <h3>Tatiana Karine Dezen</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:tatiana.dezen@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Tatiana mora em Piracicaba-SP e se formou em Ciências Econômicas pela ESALQ-USP. Adora estar com a família, amigos, gosta de aprender e se envolver em projetos com impacto social. E acredita que somente o acesso igualitário à educação poderá diminuir a desigualdade social e fazer prosperar o país.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="porto-alegre hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Porto Alegre</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/09/20190924_175611-150x150.jpg">
+                                        <h3>Caroline Dourado</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:caroline_dourado@hotmail.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Natural de Porto Alegre, formada em Administração de Empresas pela UFRGS. Durante a graduação, participei de algumas organizações estudantis como AIESEC, Empresa Jr, Enactus e Movimento Choice. Depois de formada, fiz parte do Programa Ensina Brasil como professora de português em Cuiabá e coordenei uma campanha para deputado federal em Florianópolis. Atualmente, trabalho na Secretaria de Educação de Porto Alegre e faço pós graduação em Gestão Pública no Insper. Acredito que a educação é o caminho para democratizar o acesso a oportunidades e possibilitar a mobilidade social, tornando nosso país mais justo, com condições de vida mais dignas para todos e permitindo que as pessoas possam não só sonhar, mas ter os meios para realizar seus sonhos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="porto-velho hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Porto Velho</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2018/08/perfil-Ellen-Nogueira-150x150.jpg">
+                                        <h3>Ellen Nogueira Gomes</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:ellen.nogueira@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Ex-aluna de engenharia, teve sua cota de crises existenciais até decidir sair da caixinha. Hoje estuda administração, na expectativa de poder explorar possibilidades. Tem experiência nas áreas de eventos, comunicação e educação, tendo trabalhado em parceria com organizações como Fundação Estudar, Mapa Educação e Campus Party. Ama estar com gente, ouvir histórias e sotaques. Curiosa e aprendiz, também divide interesse pelas áreas de customer success, dança e idiomas. E se precisar se resumir: é apaixonada por eventos, educação e temaki.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-paulo-5 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Ribeirão Preto</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2018/08/Foto-Thiago-Camargo-150x150.jpg">
+                                        <h3>Thiago Neves Camargo</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:thiago.camargo@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Aos 12 anos foi medalhista de prata na Olimpíada Brasileira de Matemática das Escolas Públicas &#8211; OBMEP. No ensino médio conquistou medalhada de bronze na OBMEP e ouro na Olimpíada Brasileira de Astronomia e Astronáutica. Foi selecionado para o programa Global Citizen of Tomorrow, terminando o ensino médio nos Estados Unidos. Está formando em Economia e Contabilidade pela USP. É líder do Mapa Educação em Ribeirão Preto e trabalha no Laboratório de Estudos e Pesquisas em Economia Social. Criou o projeto Saiba Mais Matemática, página no Instagram para ensinar e aproximar pessoas da matemática.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rio-de-janeiro hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Rio de Janeiro</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/4d2272e8-5a23-4c55-99d1-07360644d19d-1-Juliana-Carmo-150x150.jpg">
+                                        <h3>Juliana Bogéa do Carmo</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:Juliana.carmo@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Sou cria da Favela do Parque Columbia que tem o terceiro pior IDH da minha cidade. Desde muito cedo a pauta educação foi bastante presente na minha vida.<br />
+                                        Aos 8 anos conheci projetos sociais que fomentavam cultura dentro do meu bairro  e foi nesse período que meu ativismo começou. Sou ativista pela educação e garantia de direitos de crianças, jovens e adolescentes há 12 anos. Atualmente sou produtora periférica e idealizadora de projetos de impacto social. Sou formada pelo RenovaBR e sou jovem liderança da Agência de Redes Para a Juventude.<br />
+                                        Acredito no poder de transformação da juventude, sobretudo a juventude de favela, que cria e produz e por esse motivo idealizei 2 coletivos: Pontes Para Mudança e Coletivo Cria(ação) que potencializa sonhos dessas juventudes.<br />
+                                        Nas horas vagas sou estudante de engenharia de alimentos na UFRRJ (sou apaixonada por essa área).<br />
+                                        Quando tenho tempo livre, gosto de estar com a minha família e dar aulas e formações para meninas sobre empoderamento feminino e autocuidado. Como uma boa jovem de 20 anos, amo conhecer lugares novos e sair com meus amigos.<br />
+                                        Meu maior sonho é impactar positivamente outras pessoas e multiplicar oportunidades e repertórios. &#8220;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rio-de-janeiro-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Rio de Janeiro</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/Foto-Pedro-Mercadante-Pedro-Mercadante-150x150.jpg">
+                                        <h3>Pedro Paulo Alves Mercadante</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:pedro.mercadante@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Sou nascido e criado no subúrbio Carioca, filho de uma manicure e um taxista, fruto do poder transformador da educação.<br />
+                                        Aos 10 anos fui vice-presidente do Grêmio Estudantil da Escola Municipal Aracy Muniz Freire, experiência que transformou para sempre a minha vida. Desde muito cedo manifestei o interesse em me doar pelo próximo, sentimento que foi fundamental na escolha da minha graduação.<br />
+                                        Hoje, sou advogado, bacharel em direito pela Universidade Federal do Estado do Rio de Janeiro, democrata convicto, voluntário do Movimento Acredito, idealizador do projeto “Democratizando”, que visa o ensino dos pilares do estado democrático de direito nas escolas públicas do Rio e um vascaíno apaixonado.<br />
+                                        Nos momentos livres gosto de estar com a minha família, com amigos e se possível assistindo aos jogos do meu Vascão!<br />
+                                        Minha missão é gerar impacto positivo na vida das pessoas e quero cumpri-la mostrando às crianças e jovens da minha região que a educação é capaz de transformar vidas, assim como ela fez com a minha.&#8221;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salto hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Salto</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/unnamed-150x150.jpg">
+                                        <h3>Fabio Jorge</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://www.facebook.com/fabiojorgeprofessor" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:jorgefabio@icloud.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Tenho 26 anos, sou economista pela PUC-Campinas, especialista em Gestão Pública pela UNICAMP e pós-graduando em Gestão de Negócios pela USP. Atualmente sou Diretor de Desenvolvimento Econômico, Trabalho e Turismo na Prefeitura de Salto e professor de Economia e Finanças Pessoais, na Escola Humanidade.</p>
+                                    <p>Atuei também no mercado financeiro como agente de investimentos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salvador-4 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Salvador</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2018/08/photo_2020-07-29_20-50-46-Maryvansley-Nunes-150x150.jpg">
+                                        <h3>Maryvânsley Nunes de Sá Reis</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:maryvansley@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Jequieense, baiana, uma amante assídua da gentileza, estudante de escola pública durante toda a trajetória de vida escolar, me vi apaixonada pela educação desde cedo, ao vivenciar várias das enormes diferenças de oportunidades e privilégios existentes em nosso país.</p>
+                                    <p>Por acreditar que a Educação é o melhor caminho para construirmos um futuro melhor que me juntei a esta família, Mapa Educação. Acadêmica de Enfermagem e Obstetrícia, pela Universidade Estadual do Sudoeste da Bahia (UESB), acredito na Educação em Saúde como um dos fatores primordiais para a construção de uma sociedade mais consciente e protagonista da mudança de vida.</p>
+                                    <p>Nas horas livres gosto das sensações e dos sentimentos que o silêncio me traz e de colocá-los no papel, aprecio a leitura de bons livros e a calmaria que o violão e a música me trazem e adoro estar na companhia da família e de amigos.&#8221;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salvador hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Salvador</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/55-71-8953-2027-20200729_200045-João-Pedro-Neves-150x150.jpg">
+                                        <h3>João Pedro Neves</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:joao.neves@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Graduando em História pela Universidade Federal da Bahia, sempre estudei em escola particular e aos poucos fui percebendo o quanto sou privilegiado. Hoje, através das minhas duas paixões (educação e comunicação), dedico tempo e esforço para que as oportunidades que eu tive retornem de alguma forma para a sociedade e que o poder transformador do conhecimento chegue a todos. Costumo maratonar uma boa série e assistir futebol no meu tempo livre.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="salvador-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Salvador</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/Screenshot_2020-07-29-13-42-15-184_com.miui_.gallery-Rubem-Sampaio-150x150.jpg">
+                                        <h3>Rubem Sampaio</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:rubem.sampaio@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Gosto de ler, pedalar, assistir séries, jogos de tabuleiro, pesquisar, debater, pensar em projetos e ações que possam contribuir para melhoria da minha comunidade.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="santa-maria hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Santa Maria</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/09/Jaque-Jaqueline-Cunha-150x150.jpg">
+                                        <h3>Jaqueline Carvalho Cunha</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://www.facebook.com/jaquecarvalhocunha" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:jaqueline.cunha@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Acredito muito no poder transformador da educação!<br />
+                                        Sempre estudei em escolas e universidade públicas e, graças a elas, pude trilhar minha trajetória até aqui.<br />
+                                        Além de Líder Municipal do Mapa Educação, em Santa Maria-RS, sou professora em escolas de ensino técnico e profissionalizante, na área de Gestão e Negócios. Tenho graduação em Ciências Contábeis (UFSM), licenciatura em Educação Profissional e Tecnológica (UFSM) e, atualmente, sou mestranda no Programa de Pós-Graduação em Tecnologias Educacionais em Rede (também UFSM). Gosto muito de projetos colaborativos e, por isso, minha dissertação de mestrado terá como base a criação de uma plataforma digital colaborativa, que visa fortalecer a educação local.&#8221;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-joao-de-meriti hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São João de Meriti</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/isabella-Isabella-Cunha-150x150.jpg">
+                                        <h3>Isabella Cunha Alves da Silva</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:isabella.cunha@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Meu nome é Isabella Cunha. Moro em São João de Meriti na Baixada Fluminense, periferia do Rio de Janeiro com um dos menores índices de desenvolvimento humano do Estado. Não foi uma escolha, me envolver com militância, mas sim algo que eu precisava fazer para garantir o bem estar das pessoas da minha volta e de minha comunidade. Comecei com 14 anos atuando no grêmio estudantil do Colégio Pedro II. Durante minha trajetória passei por diversas áreas do conhecimento. Já administrei coletivos feministas e  LGBT da escola, participei de iniciação científica sobre arte urbana,de estágio na área  de Educação do Museu Nacional da UFRJ e intercâmbio do Japão na área da educação. Atualmente curso psicologia na UFF e sou organizadora do “Projeto Quarentena Solidária” que ajuda pessoas em situação em vulnerabilidade na Baixada Fluminense.  No meu tempo livre gosto de consumir cultura pop, filmes mais alternativos e sair com meus amigos. Minha principal missão é fazer jovens como eu que vieram de periferia ocuparem lugares acadêmicos e de protagonismo. Assim, fazer as pessoas conhecerem a baixada fluminense como lugar não de violência e sim resistência e luta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-luis-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São Luís</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2018/08/2020-05-31-01.47.07-1-Bruno-Veras-150x150.jpg">
+                                        <h3>Bruno Veras Penha</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:bruno.veras@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Comecei minha jornada do protagonismo durante o Ensino Médio, em um Grêmio Estudantil. Desde lá comecei a ter consciência do meu papel social e político, e o que eu poderia fazer enquanto jovem pra mudar esse mundão! Ainda tô no caminho, mas espero alcançar muito mais. Além de líder do Mapa Educação, sou articulador da ONG Engajamundo, e envolvido em vários projetos na vida. </p>
+                                    <p>Tenho muito amor pela área Ambiental, Química, Fotografia, e Cinema. Quiser fazer algum projeto, estamos aí!&#8221;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-luis-3 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São Luís</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2018/08/foto-Arão-Mota-150x150.jpg">
+                                        <h3>Arão Salatiel das Mercês Mota</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:arao@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Tenho 20 anos, sou acadêmico de Direito pela Universidade Federal do Maranhão, atuo como pesquisador voluntário no CIEP- Centro de Inovação e Conhecimento para a Excelência em Políticas Públicas e Multiplicador do Politize. O interesse pela área da educação surgiu no final do ensino fundamental, onde pude perceber de forma mais evidente a importância das oportunidades e de uma educação libertadora a fim de que todos possam construir dignamente suas narrativas e da comunidade em que vivem. Durante o Ensino Médio, fui Pesquisador Bolsista com foco em educação e participei do Programa Parlamento Jovem Brasileiro. Dentro da área acadêmica e de atuação, meus maiores interesses são em Políticas Públicas, Educação e Juventudes, além de adorar estudar história e cultura afro-brasileira. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-paulo-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São Paulo</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/Foto-Mapa.2-Isadora-Tortella-150x150.jpeg">
+                                        <h3>Isadora Tortella</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:Isadora.tortella@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8221; Sou estudante de Ensino Médio e através de trabalhos voluntários em iniciativas jovens diversas, cantando e trabalhando coletivamente, encontro meu alimento anímico.<br />
+                                        Comecei a entender o poder do meu engajamento ao me tornar representante de sala, e aprendi a direcionar as minhas forças para aquilo que acredito ter potencial de transformação em prol de uma sociedade mais empática, sustentável e coesa.<br />
+                                        Foi assim, acreditando no poder da juventude, que me direcionei para a reestruturação do Grêmio Estudantil da minha escola, co-organizei um Congresso de Jovens e me envolvi em projetos sociais. Só então que fui capaz de ligar tudo que ecoava na minha mente com o que já pulsava a tempos no meu coração: para termos uma juventude consciente, capacitada e saudável em todos aspectos possíveis, é preciso que haja educação de qualidade, acessível, humanizadora e democrática.<br />
+                                        Nessa minha busca por caminhos efetivos e consistentes para mudança, encontrei o Mapa Educação, que me apresentou para um mundo de possibilidades, e o melhor, pude redescobrir o valor e peso da juventude na mesma.&#8221;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-paulo-3 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São Paulo</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/foto-Prof-José-Guilherme-Zago-150x150.png">
+                                        <h3>José Guilherme Zago de Souza</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:guilherme.zago@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Me chamo José Guilherme Zago de Souza, vim de Atibaia para São Paulo  cursar história na Universidade de São Paulo. Fixei raízes na capital. Sempre fui decidido a atuar na docência e desde 2012 sou professor na rede estadual e desde 2015 da rede municipal de educação. Fui supervisor do PIBID por 6 anos com projetos em uso de jogos no ensino de história e História e literatura.<br />
+                                        Atualmente me interesso na área de formação de professores, ensino de história e educação baseada em evidências. Faço parte da Rede Conectando Saberes sendo coordenador do núcleo São Paulo.<br />
+                                        Minha maior preocupação em educação é garantir excelência com equidade na educação. &#8220;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-paulo hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São Paulo</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/WhatsApp-Image-2020-08-04-at-15.05.10-Julia-Peixoto-150x150.jpeg">
+                                        <h3>Julia Peixoto</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:julia.peixoto@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Líder do Mapa Educação em São Paulo, começou a graduação em Ciências da Educação na Universidade de Coimbra e atualmente estuda pedagogia na Faculdade Rudolf Steiner. Co-fundadora do Centro Acadêmico Ute Craemer, coordenadora pedagógica do SuperProfs, da Fly Educação, e co-coordenadora do Curso Ipê | Educação Popular, é profundamente apaixonada por tudo que envolve educação, principalmente didática. Além disso, adora comunicação, diplomacia e debate, por isso está sempre batendo martelinho em simulações da ONU por aí. Pagodeira de plantão, é virginiana e vive descobrindo funções medicinais das plantas. Afinal, um pouquinho de chá, babosa e óleo de coco podem solucionar 90% dos seus problemas 🙂</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="824-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São Paulo</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2019/10/IMG_4888-150x150.jpg">
+                                        <h3>Jhonatan Ferreira Alencar</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="https://www.facebook.com/jhonatan.alencar.9" class="facebook" target="_blank">Siga no Facebook</a>									<a href="mailto:jhonatanfalencar@gmail.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Jhonatan Ferreira Alencar é graduando em Gestão de Políticas Públicas e pesquisador do Instituto de Estudos Avançados da USP.  Focado em educação, desenvolveu projeto de cultura e extensão, ensinando noções de cidadania para crianças do primeiro ano do ensino fundamental de uma escola pública. Estagiou na assessoria parlamentar da Secretaria Municipal de Educação de São Paulo e na Secretaria Municipal de Inovação e Tecnologia na implementação do Descomplica SP. Participou do Programa Estágio-Visita da Câmara dos Deputados. Finalista 2019 do Legisla Brasil. Líder de São Paulo do Mapa Educação. Aluno formado pelo Renova Brasil. Talento Politize. Jovem Líder Renove. Embaixador InspiraSonho. Faz parte de um grupo de pesquisadores que desenvolveu um estudo sobre o FUNDEB. Atualmente está à frente da juventude do PSB em São Paulo, desenvolve projeto de pesquisa no Inovalab da Poli – USP e estagia na Letrus, empresa que usa tecnologia para impactar na educação. </p>
+                                    <p>Nas horas livres eu amo assistir filmes e ir ao cinema. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sao-paulo-4 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>São Paulo</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-06-at-15.20.41-Helen-Jeronimo-150x150.jpeg">
+                                        <h3>Helen Jerônimo Martins</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:helen.jeronimo@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Eu sou Helen, moro na zona leste de São Paulo. Minha trajetória foi abruptamente transformada pela educação, cresci em uma realidade com poucas oportunidades, mas tive a sorte de ter professores que acreditaram em mim. Atualmente, estudo administração pública na Fundação Getúlio Vargas, visando me aprofundar em políticas públicas para educação. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sorocaba hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Sorocaba</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/WhatsApp-Image-2020-07-25-at-4.09.44-PM-Leonardo-Souza-Flores-150x150.jpeg">
+                                        <h3>Leonardo Souza Flores</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:leonardo.flores@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>&#8220;Natural de Sorocaba (SP), tenho 16 anos e estou cursando o 2º ano do Ensino Médio com bolsa integral em uma escola privada da cidade. Durante todos os anos do Ensino Fundamental, estudei em escola pública, tendo contato direto com os problemas do sistema público de ensino. E então, ao entrar em um colégio privado, tive um choque de realidade que criou em mim um desejo de lutar por uma educação de qualidade, mais democrática, libertadora, que estimule o estudante a desenvolver seu sendo crítico, a exercer sua cidadania. Com isso em mente, me tornei ativista pela Educação.<br />
+                                        Meu primeiro passo foi fundar o meu próprio projeto (PEGG &#8211; Projeto Educacional Geração pela Geração), em que, junto com um time de mais de 50 jovens paulistanos, cariocas, sorocabanos e até mesmo um jovem de Malawi (país no sudeste do continente africano), auxilio alunos do 9º ano do Ensino Fundamental de escolas públicas no desenvolvimento acadêmico e pessoal. Por este motivo, fui premiado na Câmara Municipal de Sorocaba como &#8220;&#8221;Jovem Destaque em Educação&#8221;&#8221;. E então, passei a me envolver com outras organizações e projetos que têm o mesmo proposito que eu: lutar por uma educação pública de qualidade.<br />
+                                        Em minha atuação, me tornei Vice-CEO no Projeto de Incentivo à Educação Brasileira, coordenando ações e pesquisas, produzindo um podcast educacional chamado &#8220;&#8221;Na Ponta do Lápis, Na Ponta da Língua&#8221;&#8221;, e auxiliando no planejamento estratégico.<br />
+                                        Participo, também, de um projeto de pesquisa chamado &#8220;&#8221;Educação e Coronavírus&#8221;&#8221;, realizado pelo Vozes da Educação, em colaboração com o Mapa e com o CONJUVE (Conselho Nacional da Juventude), tendo apoio do Instituto Unibanco, em que fazemos um levantamento das ações realizadas pelos governos estaduais e federal acerca da educação na pandemia, unindo as informações de forma organizada e clara em um lugar só, o que facilita o acesso para a população.<br />
+                                        Além disso, no Mapa, participei da organização do Conexão ENEM, um cursinho popular online que foi oferecido a alunos do Maranhão e do Pará. Pude, também, auxiliar na organização da Semana Educacional Jovem do Futuro, que reuniu secretários estaduais de educação de todas as regiões do Brasil. Ainda, fui convidado a compor a mesa &#8220;&#8221;Os desafios e as consequências da pandemia para o Ensino Médio&#8221;&#8221; no seminário Construindo Futuros: Pontes para Educação, realizado pelo CONJUVE. &#8220;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sorocaba-2 hidden">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="lider-card">
+                                    <p>Unidade</p>
+                                    <h2>Sorocaba</h2>
+                                    <div class="lider-name">
+                                        <img class="img-fluid rounded-circle" src="https://mapaeducacao.com/wp-content/uploads/2020/08/leo-Leonardo-Jesus-150x150.jpg">
+                                        <h3>Leonardo Dias de Jesus</h3>
+                                        <p>Líder local</p>
+                                    </div>
+                                    <div class="external-links">
+                                        <a href="mailto:leonardo.dias@mapaeducacao.com" class="email" target="_blank">Entre em contato</a>								
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="lider-content">
+                                    <p>Leonardo cursa o 3º ano do Ensino Médio no Colégio Uirapuru, em Sorocaba-SP, através de uma bolsa integral proporcionada pelo Instituto Social para Motivar, Apoiar e Reconhecer Talentos (ISMART). Também, em 2020, iria estudar em Chicago pela Exploration Summer School (EXPLO), mas se tornou um Alumni Online. À vista de toda a disparidade educacional do Brasil, atua com ativismo social com o intuito de potencializar e transformar a educação. É CEO do Projeto de Incentivo à Educação Brasileira e Vice-CEO do Projeto Educacional Geração pela Geração. Ademais, empenha-se em organizações juvenis como Rotary Internacional, Programa de Alunos Tutores Google e outras instituições de impacto social.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="about">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-8 text-center">
+                        <h2><strong> Conectamos e qualificamos jovens para atuarem civicamente em prol da educação.</strong></h2>
+                    </div>
+                    <article class="col-lg-4">
+                        <h2><strong>Líderes locais</strong></h2>
+                        <p>Representantes do Mapa em diferentes estados do nosso país. O processo seletivo acontece anualmente e eles recebem treinamento exclusivo com nossos parceiros.</p>
+                        <h2><strong>Ativistas</strong></h2>
+                        <p>Sociedade civil que quer realizar ações na sua região, mas não sabe exatamente por onde começar. Nós te ajudamos!</p>
+                        <a href="http://mapaeducacao.com/wp-content/uploads/2019/04/guia-do-ativista.pdf" class="btn btn-block btn-ghost btn-lg" target="_blank">Guia do Ativista</a>
+                        <!--<a href="http://mapaeducacao.com/novosite/nossa-historia/" class="btn btn-block btn-primary" target="_blank">Conheça nossos projetos</a>-->
+                    </article>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <h2>Patrocinador</h2>
+                <ul class="row justify-content-center">
+                    <!--<li class="col-6 col-sm-4 col-md-4 col-lg-3"><a href="http://www.fundacaolemann.org.br/" target="_blank"><img src="https://mapaeducacao.com/wp-content/uploads/2017/01/FundacaoLemann.png" class="img-fluid" alt="Fundação Lemann"/></a></li>-->
+                    <li class="col-6 col-sm-4 col-md-4 col-lg-3"><a href="https://www.itaueducacaoetrabalho.org.br/" target="_blank"><img src="https://mapaeducacao.com/wp-content/uploads/2021/02/ItauEducacaoTrabalho_Logo_Positivo_RGB.png" class="img-fluid" alt="Itaú Educação e Trabalho"/></a></li>
+                </ul>
+                <h2>Parceiros</h2>
+                <ul class="row justify-content-center">
+                    <li class="col-6 col-sm-4 col-md-3 col-lg-2"><a href="https://home.kpmg/br/pt/home.html" target="_blank"><img src="https://mapaeducacao.com/novosite/wp-content/uploads/2019/02/KPMG-logo-e1552081790205.png" class="img-fluid" alt="KPMG"/></a></li>
+                    <li class="col-6 col-sm-4 col-md-3 col-lg-2"><a href="http://www.ggp.com.br/ggp/" target="_blank"><img src="https://mapaeducacao.com/novosite/wp-content/uploads/2019/03/ggp-logo.jpg" class="img-fluid" alt="GGP"/></a></li>
+                </ul>
+                <div class="row">
+                    <p class="col">Mapa Educação © 2021 - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/spinner.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/jquery/ui/effect-shake.min.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/responsive-accordion-and-collapse/js/bootstrap.js?ver=5.1.8'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/plugins/responsive-accordion-and-collapse/js/accordion.js?ver=5.1.8'></script>
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?ver=1'></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js?ver=1'></script>
+        <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js?ver=1'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-content/themes/mapa-educacao/js/site.js?ver=1'></script>
+        <script type='text/javascript' src='https://mapaeducacao.com/wp-includes/js/wp-embed.min.js?ver=5.1.8'></script>
     </body>
 </html>
